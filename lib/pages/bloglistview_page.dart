@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_projectbox.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_scaffold.dart';
@@ -48,7 +49,9 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                     children: <Widget>[
                       ShervinBdnDevBlogBox(
                         image: 'assets/1st_per.jpg',
-                        ontap: () {},
+                        ontap: () {
+                          bdnRouter(context, '/blog/constructors-in-python');
+                        },
                         width: 250.0,
                         height: 250.0,
                       ),
@@ -77,7 +80,10 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         children: <Widget>[
                           ShervinBdnDevBlogBox(
                             image: 'assets/1st_per.jpg',
-                            ontap: () {},
+                            ontap: () {
+                              bdnRouter(
+                                  context, '/blog/constructors-in-python');
+                            },
                             width: 250.0,
                             height: 250.0,
                           ),

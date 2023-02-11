@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/views/main_view.dart';
+import 'package:shervinbdndev/posts/first_post.dart';
 import 'package:shervinbdndev/pages/skills_page.dart';
 import 'package:shervinbdndev/pages/projects_page.dart';
 import 'package:shervinbdndev/pages/schooling_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const ShervinBdnDevMainView(),
         '/blog': (context) => const BlogListViewPage(),
+        '/blog/constructors-in-python': (context) => const FirstPost(),
         '/projects': (context) => const ProjectsPage(),
         '/skills': (context) => const SkillsPage(),
         '/schooling': (context) => const SchoolingPage(),
