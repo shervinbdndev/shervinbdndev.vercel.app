@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_divider.dart';
@@ -16,6 +18,13 @@ class BlogListViewPage extends StatefulWidget {
 class _BlogListViewPageState extends State<BlogListViewPage> {
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      MetaSEO meta = MetaSEO();
+      meta.seoAuthor('شروین بدن آرا');
+      meta.seoDescription('صفحه مقالات');
+      meta.seoKeywords('فلاتر, متا, سئو, دارت, وب');
+    }
+
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return ShervinBdnDevScaffold(
@@ -48,7 +57,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                 ? Column(
                     children: <Widget>[
                       ShervinBdnDevBlogBox(
-                        image: 'assets/1st_per.jpg',
+                        image: 'assets/pics/1st_per.jpg',
                         ontap: () {
                           bdnRouter(context, '/blog/constructors-in-python');
                         },
@@ -57,14 +66,14 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
-                        image: 'assets/soon_per.jpg',
+                        image: 'assets/pics/soon_per.jpg',
                         ontap: () {},
                         width: 250.0,
                         height: 250.0,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
-                        image: 'assets/soon_per.jpg',
+                        image: 'assets/pics/soon_per.jpg',
                         ontap: () {},
                         width: 250.0,
                         height: 250.0,
@@ -79,7 +88,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           ShervinBdnDevBlogBox(
-                            image: 'assets/1st_per.jpg',
+                            image: 'assets/pics/1st_per.jpg',
                             ontap: () {
                               bdnRouter(
                                   context, '/blog/constructors-in-python');
@@ -89,14 +98,14 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
-                            image: 'assets/soon_per.jpg',
+                            image: 'assets/pics/soon_per.jpg',
                             ontap: () {},
                             width: 250.0,
                             height: 250.0,
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
-                            image: 'assets/soon_per.jpg',
+                            image: 'assets/pics/soon_per.jpg',
                             ontap: () {},
                             width: 250.0,
                             height: 250.0,

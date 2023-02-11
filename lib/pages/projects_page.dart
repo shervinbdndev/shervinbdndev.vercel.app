@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:number_pagination/number_pagination.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_divider.dart';
@@ -21,6 +23,13 @@ class _ProjectsPageState extends State<ProjectsPage> {
 
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      MetaSEO meta = MetaSEO();
+      meta.seoAuthor('شروین بدن آرا');
+      meta.seoDescription('صفحه پروژه ها');
+      meta.seoKeywords('فلاتر, متا, سئو, دارت, وب');
+    }
+
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return ShervinBdnDevScaffold(
@@ -36,7 +45,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     ShervinBdnDevSimpleText(
-                      text: 'من؟',
+                      text: 'من',
                       color: BdnColors.purple,
                       size: 30.0,
                       weight: FontWeight.bold,

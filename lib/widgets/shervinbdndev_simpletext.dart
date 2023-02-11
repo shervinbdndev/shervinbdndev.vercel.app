@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class ShervinBdnDevSimpleText extends StatelessWidget {
@@ -20,7 +19,8 @@ class ShervinBdnDevSimpleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: GoogleFonts.aBeeZee(
+      style: TextStyle(
+        fontFamily: 'ABeeZee',
         color: color,
         fontSize: size,
         fontWeight: weight,
@@ -38,7 +38,8 @@ class BdnAnimatedText extends StatelessWidget {
       animatedTexts: [
         TypewriterAnimatedText(
           'به وبسایت من خوش آمدید',
-          textStyle: GoogleFonts.aBeeZee(
+          textStyle: const TextStyle(
+            fontFamily: 'ABeeZee',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
@@ -46,7 +47,8 @@ class BdnAnimatedText extends StatelessWidget {
         ),
         TypewriterAnimatedText(
           'من شروین بدن آرا هستم',
-          textStyle: GoogleFonts.aBeeZee(
+          textStyle: const TextStyle(
+            fontFamily: 'ABeeZee',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
@@ -54,7 +56,8 @@ class BdnAnimatedText extends StatelessWidget {
         ),
         TypewriterAnimatedText(
           'یک توسعه دهنده و برنامه نویس وب',
-          textStyle: GoogleFonts.aBeeZee(
+          textStyle: const TextStyle(
+            fontFamily: 'ABeeZee',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,

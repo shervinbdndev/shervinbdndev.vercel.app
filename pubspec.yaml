@@ -1,5 +1,5 @@
 name: shervinbdndev
-description: YOYO wassup.
+description: welcome to my profile.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -37,7 +37,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   particles_flutter: ^0.1.4
   flutter_lints: ^2.0.1
-  google_fonts: ^4.0.3
   animated_text_kit: ^4.2.2
   hovering: ^1.0.4
   url_launcher: ^6.1.8
@@ -46,6 +45,7 @@ dependencies:
   number_pagination: ^0.0.3+2
   flutter_rounded_progress_bar: ^0.2.0
   flutter_devicon: ^1.0.1
+  meta_seo: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -70,7 +70,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/
+    - assets/pics/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -83,11 +83,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: ABeeZee
+      fonts:
+        - asset: assets/fonts/ABeeZee-Regular.ttf
+        - asset: assets/fonts/ABeeZee-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

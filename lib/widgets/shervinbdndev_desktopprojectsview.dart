@@ -20,7 +20,7 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
             : ShervinBdnDevProjectBox(
                 width: 350.0,
                 height: 150.0,
-                image: 'assets/PyScriptTools.jpg',
+                image: 'assets/pics/PyScriptTools.jpg',
                 ontap: () async {
                   await launchUrl(
                     Uri.parse(
@@ -31,7 +31,7 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: 350.0,
           height: 150.0,
-          image: 'assets/Finder.png',
+          image: 'assets/pics/Finder.png',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/Finder'),
@@ -41,7 +41,7 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: 350.0,
           height: 150.0,
-          image: 'assets/WhatsappClone.png',
+          image: 'assets/pics/WhatsappClone.png',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/WhatsappClone'),

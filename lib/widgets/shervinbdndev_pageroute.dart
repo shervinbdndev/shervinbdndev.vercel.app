@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ShervinBdnDevPageRouteWidget extends StatelessWidget {
   final String text;
@@ -19,7 +18,8 @@ class ShervinBdnDevPageRouteWidget extends StatelessWidget {
         onTap: ontap,
         child: Text(
           text,
-          style: GoogleFonts.aBeeZee(
+          style: const TextStyle(
+            fontFamily: 'ABeeZee',
             color: Colors.white,
             fontSize: 15.0,
             fontWeight: FontWeight.bold,

@@ -69,7 +69,7 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(140.0),
                             child: Image.asset(
-                              'assets/me.jpg',
+                              'assets/pics/me.jpg',
                               fit: BoxFit.cover,
                             ),
                           ),

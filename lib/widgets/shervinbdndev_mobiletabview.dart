@@ -15,7 +15,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
-          image: 'assets/PyScriptTools.jpg',
+          image: 'assets/pics/PyScriptTools.jpg',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/PyScriptTools.py'),
@@ -25,7 +25,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
-          image: 'assets/Finder.png',
+          image: 'assets/pics/Finder.png',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/Finder'),
@@ -35,7 +35,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
-          image: 'assets/WhatsappClone.png',
+          image: 'assets/pics/WhatsappClone.png',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/WhatsappClone'),

@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_scaffold.dart';
@@ -14,6 +16,13 @@ class ShervinBdnDevMainView extends StatefulWidget {
 class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      MetaSEO meta = MetaSEO();
+      meta.seoAuthor('شروین بدن آرا');
+      meta.seoDescription('صفحه اصلی');
+      meta.seoKeywords('فلاتر, متا, سئو, دارت, وب');
+    }
+
     return const ShervinBdnDevScaffold(
       importedWidgets: Padding(
         padding: EdgeInsets.only(top: 50.0),

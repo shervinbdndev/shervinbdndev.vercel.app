@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -28,7 +27,8 @@ class ShervinBdnDevLogoText extends StatelessWidget {
                   BdnColors.purple,
                   BdnColors.blue,
                 ],
-          textStyle: GoogleFonts.aBeeZee(
+          textStyle: const TextStyle(
+            fontFamily: 'ABeeZee',
             color: Colors.white,
             fontSize: 22.0,
             fontWeight: FontWeight.bold,

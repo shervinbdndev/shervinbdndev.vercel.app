@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/views/main_view.dart';
 import 'package:shervinbdndev/posts/first_post.dart';
 import 'package:shervinbdndev/pages/skills_page.dart';
@@ -8,7 +10,9 @@ import 'package:shervinbdndev/pages/certificates_page.dart';
 import 'package:shervinbdndev/pages/bloglistview_page.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) {
+    MetaSEO().seoMetaConfig();
+  }
   runApp(const MyApp());
 }
 
