@@ -136,6 +136,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  lecle_bubble_timeline:
+    dependency: "direct main"
+    description:
+      name: lecle_bubble_timeline
+      sha256: "21b84904801d8d64d43fd532923ee232a25bed86d4c2fd2af7fc25e2973bcb79"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1+1"
   lints:
     dependency: transitive
     description:
