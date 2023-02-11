@@ -22,7 +22,6 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
             );
           },
         ),
-        const SizedBox(height: 10.0),
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
@@ -33,7 +32,6 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
             );
           },
         ),
-        const SizedBox(height: 10.0),
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,

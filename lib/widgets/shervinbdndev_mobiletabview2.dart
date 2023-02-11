@@ -22,7 +22,6 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
             );
           },
         ),
-        const SizedBox(height: 10.0),
         ShervinBdnDevProjectBox(
           image: 'assets/SendResume-Django.png',
           width: BdnConfig.websiteProjectBoxWidth,
@@ -33,7 +32,6 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
             );
           },
         ),
-        const SizedBox(height: 10.0),
         ShervinBdnDevProjectBox(
           image: 'assets/PythonLibraryUpdator.png',
           width: BdnConfig.websiteProjectBoxWidth,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shervinbdndev/views/main_view.dart';
 import 'package:shervinbdndev/pages/skills_page.dart';
 import 'package:shervinbdndev/pages/projects_page.dart';
+import 'package:shervinbdndev/pages/schooling_page.dart';
+import 'package:shervinbdndev/pages/certificates_page.dart';
 import 'package:shervinbdndev/pages/bloglistview_page.dart';
 
 void main() {
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
         '/blog': (context) => const BlogListViewPage(),
         '/projects': (context) => const ProjectsPage(),
         '/skills': (context) => const SkillsPage(),
+        '/schooling': (context) => const SchoolingPage(),
+        '/certificates': (context) => const CertificatesPage(),
       },
       debugShowCheckedModeBanner: !true,
     );

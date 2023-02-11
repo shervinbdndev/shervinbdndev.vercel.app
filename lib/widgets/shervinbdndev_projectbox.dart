@@ -20,29 +20,56 @@ class ShervinBdnDevProjectBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10.0),
+      padding: const EdgeInsets.only(
+        left: 10.0,
+        top: 10.0,
+      ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(5.0),
           onTap: ontap,
-          child: HoverContainer(
-            width: width,
-            height: height,
-            hoverWidth: width + 30.0,
-            hoverHeight: height + 30.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5.0),
-              border: Border.all(
-                width: 2.0,
-                color: BdnColors.purple,
+          child: HoverCrossFadeWidget(
+            duration: const Duration(milliseconds: 300),
+            cursor: MouseCursor.defer,
+            firstChild: HoverContainer(
+              width: width,
+              height: height,
+              cursor: MouseCursor.defer,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(
+                  width: 2.0,
+                  color: BdnColors.purple,
+                ),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(5.0),
+                child: Image.asset(
+                  image,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(5.0),
-              child: Image.asset(
-                image,
-                fit: BoxFit.cover,
+            secondChild: HoverContainer(
+              width: width,
+              height: height,
+              hoverWidth: width + 30.0,
+              hoverHeight: height + 30.0,
+              cursor: MouseCursor.defer,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(
+                  width: 2.0,
+                  color: BdnColors.purple,
+                ),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(5.0),
+                child: Image.network(
+                  image,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
           ),

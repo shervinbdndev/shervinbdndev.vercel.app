@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:particles_flutter/particles_flutter.dart';
-import 'package:shervinbdndev/components/component.dart';
 
 class ShervinBdnDevParticles extends StatelessWidget {
   final double height;
@@ -25,7 +24,7 @@ class ShervinBdnDevParticles extends StatelessWidget {
       onTapAnimation: true,
       awayAnimationDuration: const Duration(milliseconds: 1000),
       enableHover: true,
-      hoverColor: BdnColors.blue,
+      hoverColor: Colors.deepPurple,
       awayAnimationCurve: Curves.easeInToLinear,
     );
   }

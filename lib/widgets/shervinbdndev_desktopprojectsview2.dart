@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shervinbdndev/components/component.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_projectbox.dart';
 import 'package:shervinbdndev/widgets/shervinbdndev_mobiletabview.dart';
@@ -14,7 +15,7 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        deviceWidth <= 800.0
+        deviceWidth <= BdnConfig.websiteResponsivenessLimitForTablet
             ? const ShervinBdnDevMobileTabletView()
             : ShervinBdnDevProjectBox(
                 image: 'assets/Portfolio.png',

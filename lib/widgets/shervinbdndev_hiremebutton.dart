@@ -19,7 +19,7 @@ class ShervinBdnDevHireMeButton extends StatelessWidget {
         onTap: () {
           bdnRouter(
             context,
-            '/home',
+            '/',
           );
         },
         borderRadius: BorderRadius.circular(50.0),
