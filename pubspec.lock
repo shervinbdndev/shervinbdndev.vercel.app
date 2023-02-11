@@ -94,6 +94,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_devicon:
+    dependency: "direct main"
+    description:
+      name: flutter_devicon
+      sha256: e9a87d70a6f4e3d280f043cb10e0a4602c634b552831eca47ddecc532494f915
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   flutter_lints:
     dependency: "direct main"
     description:
@@ -102,6 +110,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  flutter_rounded_progress_bar:
+    dependency: "direct main"
+    description:
+      name: flutter_rounded_progress_bar
+      sha256: dd4ec3ce9bee8f331d8dd970bbfed9d8b5da70258490661a3c0fc13e031b03c2
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter

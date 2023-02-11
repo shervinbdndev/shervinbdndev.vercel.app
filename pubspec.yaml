@@ -44,6 +44,8 @@ dependencies:
   gradient_borders: ^1.0.0
   font_awesome_flutter: ^10.3.0
   number_pagination: ^0.0.3+2
+  flutter_rounded_progress_bar: ^0.2.0
+  flutter_devicon: ^1.0.1
 
 dev_dependencies:
   flutter_test:

@@ -11,4 +11,6 @@ class BdnConfig {
 class BdnColors {
   static const Color blue = Color(0xff1D293E);
   static const Color purple = Color(0xff6F64E7);
+  static const Color pyBlue = Color.fromARGB(255, 64, 154, 223);
+  static const Color djGreen = Color(0xff092E20);
 }

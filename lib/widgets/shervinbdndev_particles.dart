@@ -24,7 +24,7 @@ class ShervinBdnDevParticles extends StatelessWidget {
       onTapAnimation: true,
       awayAnimationDuration: const Duration(milliseconds: 1000),
       enableHover: true,
-      hoverColor: Colors.deepPurple,
+      hoverColor: Colors.orangeAccent,
       awayAnimationCurve: Curves.easeInToLinear,
     );
   }
