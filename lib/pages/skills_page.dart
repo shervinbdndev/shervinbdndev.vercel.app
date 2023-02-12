@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_devicon/flutter_devicon.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/widgets/shervinbdndev_divider.dart';
-import 'package:shervinbdndev/widgets/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/widgets/shervinbdndev_simpletext.dart';
-import 'package:shervinbdndev/widgets/shervinbdndev_progressbar.dart';
+import 'package:shervinbdndev/fragments/shervinbdndev_divider.dart';
+import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
+import 'package:shervinbdndev/fragments/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/shervinbdndev_progressbar.dart';
 
 class SkillsPage extends StatefulWidget {
   const SkillsPage({super.key});
