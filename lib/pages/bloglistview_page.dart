@@ -63,8 +63,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         },
                         width: 250.0,
                         height: 250.0,
-                        likeCount: 15,
-                        saveCount: 4,
+                        likeCount: 23,
+                        saveCount: 8,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(

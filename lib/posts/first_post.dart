@@ -50,13 +50,13 @@ class _FirstPostState extends State<FirstPost> {
               ),
             ],
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 15.0),
           ShervinBdnDevSimpleText(
             text:
                 'یا متد سازنده، متدیه که برای ایجاد کردن یا ساختن یه کلاس کاربرد داره ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -64,7 +64,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'و با هر نمونه گرفتن از کلاس، این متد فراخونی میشه',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -72,7 +72,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'تو زبان پایتون این متد قابل شخصی سازیه ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -81,7 +81,7 @@ class _FirstPostState extends State<FirstPost> {
                 'بطوری که میشه برای نحوه ایجاد شدن یا ساخته شدن کلاس، شرط تعیین کرد ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -111,7 +111,7 @@ class _FirstPostState extends State<FirstPost> {
                 'فرض کنین کلاسی داریم که یک مقدار عددی رو به عنوان ورودی، از کاربر میگیره',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -119,7 +119,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'برای ذخیره سازی این مقدار گرفته شده از کاربر',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -127,7 +127,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'استفاده میکنیم __init__ تو پایتون از متد ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -135,7 +135,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'و اینکه این متد، کانستراکتور نیست',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -172,7 +172,7 @@ class _FirstPostState extends State<FirstPost> {
                 'تو پایتون برای ایجاد یک کلاس، نیاز به استفاده از کانستراکتور نیست',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -181,7 +181,7 @@ class _FirstPostState extends State<FirstPost> {
                 'روی هر کلاسی که ما میسازیم اجرا میشه __new__ بصورت پیشفرض متد',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -189,7 +189,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'ولی ما میخوایم که نحوه ایجاد کلاسمون رو شخصی سازی کنیم پس',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -197,7 +197,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'میگیریم و براش شرط میذاریم __init__ مقدار ورودی رو از',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -205,7 +205,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'که اگر مقدار ورودی بعد از مقداردهی، کوچکتر از ۱۸ بود',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
@@ -213,7 +213,7 @@ class _FirstPostState extends State<FirstPost> {
             text: 'کلاسی ایجاد یا ساخته نشه',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
           ),
