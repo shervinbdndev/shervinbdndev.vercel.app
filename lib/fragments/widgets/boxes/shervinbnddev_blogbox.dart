@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:like_button/like_button.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 
 class ShervinBdnDevBlogBox extends StatelessWidget {
   final String image;
@@ -27,30 +28,27 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
       padding: const EdgeInsets.only(left: 10.0),
       child: Column(
         children: <Widget>[
-          Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: ontap,
-              borderRadius: BorderRadius.circular(10.0),
-              child: HoverAnimatedContainer(
-                width: width,
-                height: height,
-                hoverWidth: width + 30.0,
-                hoverHeight: height + 30.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  border: Border.all(
-                    width: 2.0,
-                    color: BdnColors.purple,
-                  ),
+          ShervinBdnDevRipple(
+            bd: 10.0,
+            ontap: ontap,
+            widget: HoverAnimatedContainer(
+              width: width,
+              height: height,
+              hoverWidth: width + 30.0,
+              hoverHeight: height + 30.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                border: Border.all(
+                  width: 2.0,
+                  color: BdnColors.purple,
                 ),
-                cursor: MouseCursor.defer,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10.0),
-                  child: Image.asset(
-                    image,
-                    fit: BoxFit.cover,
-                  ),
+              ),
+              cursor: MouseCursor.defer,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: Image.asset(
+                  image,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),

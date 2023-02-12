@@ -25,6 +25,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
         child: Column(
           children: <Widget>[
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/');
               },
@@ -34,6 +35,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
               ),
             ),
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/projects');
               },
@@ -43,6 +45,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
               ),
             ),
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/blog');
               },
@@ -52,6 +55,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
               ),
             ),
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/skills');
               },
@@ -61,6 +65,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
               ),
             ),
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/schooling');
               },
@@ -70,6 +75,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
               ),
             ),
             ShervinBdnDevRipple(
+              bd: 0,
               ontap: () {
                 bdnRouter(context, '/certificates');
               },

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 
 class ShervinBdnDevProjectBox extends StatelessWidget {
   final String image;
@@ -23,30 +24,27 @@ class ShervinBdnDevProjectBox extends StatelessWidget {
         left: 10.0,
         top: 10.0,
       ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(10.0),
-          onTap: ontap,
-          child: HoverAnimatedContainer(
-            width: width,
-            height: height,
-            hoverWidth: width + 30.0,
-            hoverHeight: height + 30.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
-              border: Border.all(
-                width: 2.0,
-                color: BdnColors.purple,
-              ),
+      child: ShervinBdnDevRipple(
+        bd: 10.0,
+        ontap: ontap,
+        widget: HoverAnimatedContainer(
+          width: width,
+          height: height,
+          hoverWidth: width + 30.0,
+          hoverHeight: height + 30.0,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10.0),
+            border: Border.all(
+              width: 2.0,
+              color: BdnColors.purple,
             ),
-            cursor: MouseCursor.defer,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10.0),
-              child: Image.asset(
-                image,
-                fit: BoxFit.cover,
-              ),
+          ),
+          cursor: MouseCursor.defer,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10.0),
+            child: Image.asset(
+              image,
+              fit: BoxFit.cover,
             ),
           ),
         ),

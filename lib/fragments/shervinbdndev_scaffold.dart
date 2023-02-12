@@ -3,7 +3,7 @@ import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_appbar.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_drawer.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_desktopmenu.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_hiremebutton.dart';
+import 'package:shervinbdndev/fragments/widgets/buttons/shervinbdndev_hiremebutton.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_particles.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
