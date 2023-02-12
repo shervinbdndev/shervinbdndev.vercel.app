@@ -2,11 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/fragments/widgets/boxes/shervinbnddev_blogbox.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_projectbox.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 
 class BlogListViewPage extends StatefulWidget {
   const BlogListViewPage({super.key});

@@ -5,8 +5,8 @@ import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_progressbar.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class SkillsPage extends StatefulWidget {
   const SkillsPage({super.key});

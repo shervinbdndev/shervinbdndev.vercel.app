@@ -5,11 +5,11 @@ import 'package:shervinbdndev/components/component.dart';
 import 'package:number_pagination/number_pagination.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/fragments/projects/mobile/shervinbdndev_mobiletabview.dart';
 import 'package:shervinbdndev/fragments/projects/mobile/shervinbdndev_mobiletabview2.dart';
 import 'package:shervinbdndev/fragments/projects/desktop/shervinbdndev_desktopprojectsview.dart';
 import 'package:shervinbdndev/fragments/projects/desktop/shervinbdndev_desktopprojectsview2.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ProjectsPage extends StatefulWidget {
   const ProjectsPage({super.key});

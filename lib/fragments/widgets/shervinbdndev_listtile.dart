@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevListTile extends StatelessWidget {
   final IconData icon;

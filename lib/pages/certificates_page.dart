@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class CertificatesPage extends StatefulWidget {
   const CertificatesPage({super.key});

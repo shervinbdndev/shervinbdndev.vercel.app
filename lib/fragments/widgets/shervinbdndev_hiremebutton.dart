@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevHireMeButton extends StatelessWidget {
   final String text;

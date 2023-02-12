@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_logotext.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_logotext.dart';
 
 class ShervinBdnDevAppbar extends StatelessWidget
     implements PreferredSizeWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/fragments/projects/mobile/shervinbdndev_mobiletabview2.dart';
+import 'package:shervinbdndev/fragments/widgets/boxes/shervinbdndev_projectbox.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_projectbox.dart';
 
 class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
   const ShervinBdnDevDesktopProjectsView({super.key});

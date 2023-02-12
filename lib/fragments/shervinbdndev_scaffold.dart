@@ -5,7 +5,7 @@ import 'package:shervinbdndev/fragments/header/shervinbdndev_drawer.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_desktopmenu.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_hiremebutton.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_particles.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevScaffold extends StatelessWidget {
   final Widget importedWidgets;
