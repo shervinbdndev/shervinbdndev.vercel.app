@@ -2,9 +2,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_divider.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 
 class FirstPost extends StatefulWidget {
   const FirstPost({super.key});

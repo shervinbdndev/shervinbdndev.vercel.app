@@ -4,9 +4,9 @@ import 'package:lecle_bubble_timeline/lecle_bubble_timeline.dart';
 import 'package:lecle_bubble_timeline/models/timeline_item.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 
 class SchoolingPage extends StatefulWidget {
   const SchoolingPage({super.key});

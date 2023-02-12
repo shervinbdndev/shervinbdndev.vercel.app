@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/router/router.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_divider.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_projectbox.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_projectbox.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_simpletext.dart';
 
 class BlogListViewPage extends StatefulWidget {
   const BlogListViewPage({super.key});
@@ -63,6 +63,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         },
                         width: 250.0,
                         height: 250.0,
+                        likeCount: 15,
+                        saveCount: 4,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
@@ -70,6 +72,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         ontap: () {},
                         width: 250.0,
                         height: 250.0,
+                        likeCount: 0,
+                        saveCount: 0,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
@@ -77,6 +81,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         ontap: () {},
                         width: 250.0,
                         height: 250.0,
+                        likeCount: 0,
+                        saveCount: 0,
                       ),
                     ],
                   )
@@ -95,6 +101,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                             },
                             width: 250.0,
                             height: 250.0,
+                            likeCount: 15,
+                            saveCount: 4,
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
@@ -102,6 +110,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                             ontap: () {},
                             width: 250.0,
                             height: 250.0,
+                            likeCount: 0,
+                            saveCount: 0,
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
@@ -109,6 +119,8 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                             ontap: () {},
                             width: 250.0,
                             height: 250.0,
+                            likeCount: 0,
+                            saveCount: 0,
                           ),
                         ],
                       ),

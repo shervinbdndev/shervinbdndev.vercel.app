@@ -47,6 +47,7 @@ dependencies:
   flutter_devicon: ^1.0.1
   meta_seo: ^2.0.2
   lecle_bubble_timeline: ^0.0.1+1
+  like_button: ^2.0.5
 
 dev_dependencies:
   flutter_test:
