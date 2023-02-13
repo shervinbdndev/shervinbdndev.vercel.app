@@ -78,7 +78,7 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                         const Padding(
                           padding: EdgeInsets.only(top: 15.0),
                           child: ShervinBdnDevHireMeButton(
-                            text: 'تماس با من',
+                            text: 'ارتباط با من',
                           ),
                         ),
                       ],

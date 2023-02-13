@@ -17,6 +17,15 @@ class ShervinBdnDevAppbar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: IconButton(
+        icon: const Icon(
+          Icons.menu_rounded,
+          color: Colors.white,
+        ),
+        onPressed: () async {
+          Scaffold.of(context).openDrawer();
+        },
+      ),
       flexibleSpace: Container(
         width: deviceWidth,
         height: BdnConfig.websiteHeaderHeight,

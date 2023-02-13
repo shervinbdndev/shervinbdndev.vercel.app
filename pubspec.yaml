@@ -48,6 +48,8 @@ dependencies:
   meta_seo: ^2.0.2
   lecle_bubble_timeline: ^0.0.1+1
   like_button: ^2.0.5
+  clipboard: ^0.1.3
+  awesome_snackbar_content: ^0.1.0
 
 dev_dependencies:
   flutter_test:

@@ -1,12 +1,13 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
-import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/boxes/shervinbnddev_blogbox.dart';
-import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/router/router.dart';
+import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_snackbar.dart';
+import 'package:shervinbdndev/fragments/widgets/boxes/shervinbnddev_blogbox.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class BlogListViewPage extends StatefulWidget {
   const BlogListViewPage({super.key});
@@ -58,18 +59,20 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                     children: <Widget>[
                       ShervinBdnDevBlogBox(
                         image: 'assets/pics/1st_per.jpg',
-                        ontap: () {
+                        ontap: () async {
                           bdnRouter(context, '/blog/constructors-in-python');
                         },
                         width: 250.0,
                         height: 250.0,
-                        likeCount: 23,
-                        saveCount: 8,
+                        likeCount: 43,
+                        saveCount: 18,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
                         image: 'assets/pics/soon_per.jpg',
-                        ontap: () {},
+                        ontap: () async {
+                          scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                        },
                         width: 250.0,
                         height: 250.0,
                         likeCount: 0,
@@ -78,7 +81,9 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
                         image: 'assets/pics/soon_per.jpg',
-                        ontap: () {},
+                        ontap: () async {
+                          scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                        },
                         width: 250.0,
                         height: 250.0,
                         likeCount: 0,
@@ -95,7 +100,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         children: <Widget>[
                           ShervinBdnDevBlogBox(
                             image: 'assets/pics/1st_per.jpg',
-                            ontap: () {
+                            ontap: () async {
                               bdnRouter(
                                   context, '/blog/constructors-in-python');
                             },
@@ -107,7 +112,9 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
                             image: 'assets/pics/soon_per.jpg',
-                            ontap: () {},
+                            ontap: () async {
+                              scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                            },
                             width: 250.0,
                             height: 250.0,
                             likeCount: 0,
@@ -116,7 +123,9 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
                             image: 'assets/pics/soon_per.jpg',
-                            ontap: () {},
+                            ontap: () async {
+                              scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                            },
                             width: 250.0,
                             height: 250.0,
                             likeCount: 0,

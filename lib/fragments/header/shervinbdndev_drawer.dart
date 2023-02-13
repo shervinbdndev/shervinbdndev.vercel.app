@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_listtile.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevDrawer extends StatelessWidget {
   const ShervinBdnDevDrawer({super.key});
@@ -102,7 +102,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   ShervinBdnDevSimpleText(
-                    text: 'V 1.2.6',
+                    text: 'V 1.2.7',
                     color: BdnColors.blue,
                     size: 12.0,
                     weight: FontWeight.bold,

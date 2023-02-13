@@ -64,6 +64,10 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
                   likeCountAnimationDuration:
                       const Duration(milliseconds: 1000),
                   countPostion: CountPostion.right,
+                  bubblesColor: const BubblesColor(
+                    dotPrimaryColor: BdnColors.purple,
+                    dotSecondaryColor: BdnColors.pyBlue,
+                  ),
                   likeBuilder: (isLiked) {
                     return Icon(
                       Icons.favorite,
@@ -86,6 +90,10 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
                   likeCountAnimationDuration:
                       const Duration(milliseconds: 1000),
                   countPostion: CountPostion.right,
+                  bubblesColor: const BubblesColor(
+                    dotPrimaryColor: BdnColors.purple,
+                    dotSecondaryColor: BdnColors.pyBlue,
+                  ),
                   likeBuilder: (isLiked) {
                     return Icon(
                       Icons.save_rounded,

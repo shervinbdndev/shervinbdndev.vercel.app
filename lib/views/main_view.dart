@@ -90,7 +90,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ShervinBdnDevSimpleText(
-                        text: 'بیشتر؟',
+                        text: 'بیشتر',
                         color: BdnColors.purple,
                         size: 30.0,
                         weight: FontWeight.bold,
