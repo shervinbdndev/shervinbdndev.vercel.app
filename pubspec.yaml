@@ -88,10 +88,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: ABeeZee
+    - family: Vazirmatn
       fonts:
-        - asset: assets/fonts/ABeeZee-Regular.ttf
-        - asset: assets/fonts/ABeeZee-Italic.ttf
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+        - asset: assets/fonts/Vazirmatn-Light.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

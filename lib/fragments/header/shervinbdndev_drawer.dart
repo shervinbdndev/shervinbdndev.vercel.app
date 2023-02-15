@@ -102,7 +102,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   ShervinBdnDevSimpleText(
-                    text: 'V 1.2.7',
+                    text: 'V 1.2.8',
                     color: BdnColors.blue,
                     size: 12.0,
                     weight: FontWeight.bold,

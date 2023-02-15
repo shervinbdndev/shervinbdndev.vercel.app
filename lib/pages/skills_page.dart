@@ -176,8 +176,8 @@ class _SkillsPageState extends State<SkillsPage> {
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
                               icon: FlutterDEVICON.visualstudio_plain,
-                              percent: 100,
-                              text: '100%',
+                              percent: 95,
+                              text: '95%',
                               techText: 'VsCode',
                             ),
                             SizedBox(height: 20.0),
@@ -340,8 +340,8 @@ class _SkillsPageState extends State<SkillsPage> {
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.visualstudio_plain,
-                                  percent: 100,
-                                  text: '100%',
+                                  percent: 95,
+                                  text: '95%',
                                   techText: 'VsCode',
                                 ),
                                 SizedBox(width: 20.0),

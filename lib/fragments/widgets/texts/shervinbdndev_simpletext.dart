@@ -20,7 +20,7 @@ class ShervinBdnDevSimpleText extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontFamily: 'ABeeZee',
+        fontFamily: 'Vazirmatn',
         color: color,
         fontSize: size,
         fontWeight: weight,
@@ -39,7 +39,7 @@ class BdnAnimatedText extends StatelessWidget {
         TypewriterAnimatedText(
           'به وبسایت من خوش آمدید',
           textStyle: const TextStyle(
-            fontFamily: 'ABeeZee',
+            fontFamily: 'Vazirmatn',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
@@ -48,7 +48,7 @@ class BdnAnimatedText extends StatelessWidget {
         TypewriterAnimatedText(
           'من شروین بدن آرا هستم',
           textStyle: const TextStyle(
-            fontFamily: 'ABeeZee',
+            fontFamily: 'Vazirmatn',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
@@ -57,7 +57,7 @@ class BdnAnimatedText extends StatelessWidget {
         TypewriterAnimatedText(
           'یک توسعه دهنده و برنامه نویس وب',
           textStyle: const TextStyle(
-            fontFamily: 'ABeeZee',
+            fontFamily: 'Vazirmatn',
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
