@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/views/main_view.dart';
 import 'package:shervinbdndev/posts/first_post.dart';
 import 'package:shervinbdndev/pages/skills_page.dart';
+import 'package:shervinbdndev/posts/second_post.dart';
 import 'package:shervinbdndev/pages/projects_page.dart';
 import 'package:shervinbdndev/pages/schooling_page.dart';
 import 'package:shervinbdndev/pages/certificates_page.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const ShervinBdnDevMainView(),
         '/blog': (context) => const BlogListViewPage(),
         '/blog/constructors-in-python': (context) => const FirstPost(),
+        '/blog/imports-in-python': (context) => const SecondPost(),
         '/projects': (context) => const ProjectsPage(),
         '/skills': (context) => const SkillsPage(),
         '/schooling': (context) => const SchoolingPage(),

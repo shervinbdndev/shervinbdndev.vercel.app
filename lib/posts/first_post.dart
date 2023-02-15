@@ -92,7 +92,7 @@ class _FirstPostState extends State<FirstPost> {
             children: <Widget>[
               ShervinBdnDevSimpleText(
                 text: '__init__',
-                color: BdnColors.purple,
+                color: BdnColors.methodColor,
                 size: 35.0,
                 weight: FontWeight.bold,
               ),
@@ -153,7 +153,7 @@ class _FirstPostState extends State<FirstPost> {
             children: <Widget>[
               ShervinBdnDevSimpleText(
                 text: '__new__',
-                color: BdnColors.purple,
+                color: BdnColors.methodColor,
                 size: 35.0,
                 weight: FontWeight.bold,
               ),

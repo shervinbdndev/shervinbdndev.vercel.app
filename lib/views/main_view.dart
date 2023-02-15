@@ -125,6 +125,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 8.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -143,6 +144,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 8.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -161,6 +163,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 8.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

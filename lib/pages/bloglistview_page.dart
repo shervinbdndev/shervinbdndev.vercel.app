@@ -58,7 +58,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                 ? Column(
                     children: <Widget>[
                       ShervinBdnDevBlogBox(
-                        image: 'assets/pics/1st_per.jpg',
+                        image: 'assets/pics/first_post_thumbnail.jpg',
                         ontap: () async {
                           bdnRouter(context, '/blog/constructors-in-python');
                         },
@@ -69,14 +69,14 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
-                        image: 'assets/pics/soon_per.jpg',
+                        image: 'assets/pics/second_post_thumbnail.jpg',
                         ontap: () async {
-                          scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                          bdnRouter(context, '/blog/imports-in-python');
                         },
                         width: 250.0,
                         height: 250.0,
-                        likeCount: 0,
-                        saveCount: 0,
+                        likeCount: 23,
+                        saveCount: 4,
                       ),
                       const SizedBox(height: 15.0),
                       ShervinBdnDevBlogBox(
@@ -99,26 +99,26 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           ShervinBdnDevBlogBox(
-                            image: 'assets/pics/1st_per.jpg',
+                            image: 'assets/pics/first_post_thumbnail.jpg',
                             ontap: () async {
                               bdnRouter(
                                   context, '/blog/constructors-in-python');
                             },
                             width: 250.0,
                             height: 250.0,
-                            likeCount: 15,
-                            saveCount: 4,
+                            likeCount: 43,
+                            saveCount: 18,
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
-                            image: 'assets/pics/soon_per.jpg',
+                            image: 'assets/pics/second_post_thumbnail.jpg',
                             ontap: () async {
-                              scaffoldSnackbar(context, 'بزودی آپلود میشود');
+                              bdnRouter(context, '/blog/imports-in-python');
                             },
                             width: 250.0,
                             height: 250.0,
-                            likeCount: 0,
-                            saveCount: 0,
+                            likeCount: 23,
+                            saveCount: 4,
                           ),
                           const SizedBox(width: 15.0),
                           ShervinBdnDevBlogBox(
