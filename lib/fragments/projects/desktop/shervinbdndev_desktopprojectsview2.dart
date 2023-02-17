@@ -18,7 +18,7 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
         deviceWidth <= BdnConfig.websiteResponsivenessLimitForTablet
             ? const ShervinBdnDevMobileTabletView2()
             : ShervinBdnDevProjectBox(
-                image: 'assets/pics/Portfolio.png',
+                image: BdnUrls.portfolio,
                 width: 350.0,
                 height: 150.0,
                 ontap: () async {
@@ -28,7 +28,7 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
                 },
               ),
         ShervinBdnDevProjectBox(
-          image: 'assets/pics/SendResume-Django.png',
+          image: BdnUrls.resume,
           width: 350.0,
           height: 150.0,
           ontap: () async {
@@ -38,7 +38,7 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
           },
         ),
         ShervinBdnDevProjectBox(
-          image: 'assets/pics/PythonLibraryUpdator.png',
+          image: BdnUrls.updator,
           width: 350.0,
           height: 150.0,
           ontap: () async {

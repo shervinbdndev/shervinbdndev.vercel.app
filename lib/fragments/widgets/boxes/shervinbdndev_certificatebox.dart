@@ -40,6 +40,7 @@ class ShervinBdnDevCertificateBox extends StatelessWidget {
               imageUrl: image,
               width: width,
               height: 250.0,
+              shimmerBaseColor: BdnColors.purple,
             ),
           ),
         ),

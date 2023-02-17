@@ -47,6 +47,7 @@ class ShervinBdnDevProjectBox extends StatelessWidget {
               imageUrl: image,
               width: 380.0,
               height: 180.0,
+              shimmerBaseColor: BdnColors.purple,
             ),
           ),
         ),

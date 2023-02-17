@@ -73,6 +73,7 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                               imageUrl: BdnUrls.me,
                               width: 280.0,
                               height: 280.0,
+                              shimmerBaseColor: BdnColors.purple,
                             ),
                           ),
                         ),

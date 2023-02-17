@@ -13,7 +13,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         ShervinBdnDevProjectBox(
-          image: 'assets/pics/Portfolio.png',
+          image: BdnUrls.portfolio,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
           ontap: () async {
@@ -23,7 +23,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
           },
         ),
         ShervinBdnDevProjectBox(
-          image: 'assets/pics/SendResume-Django.png',
+          image: BdnUrls.resume,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
           ontap: () async {
@@ -33,7 +33,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
           },
         ),
         ShervinBdnDevProjectBox(
-          image: 'assets/pics/PythonLibraryUpdator.png',
+          image: BdnUrls.updator,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
           ontap: () async {
