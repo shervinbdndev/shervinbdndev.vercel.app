@@ -19,7 +19,7 @@ class ShervinBdnDevPageRouteWidget extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-            fontFamily: 'ABeeZee',
+            fontFamily: 'Vazirmatn',
             color: Colors.white,
             fontSize: 15.0,
             fontWeight: FontWeight.bold,

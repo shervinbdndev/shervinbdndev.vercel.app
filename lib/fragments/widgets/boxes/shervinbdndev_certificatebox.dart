@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/buttons/shervinbnddev_viewcertificatebuton.dart';
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/buttons/shervinbdndev_downloadbutton.dart';
+import 'package:shervinbdndev/fragments/widgets/buttons/shervinbnddev_viewcertificatebuton.dart';
 
 class ShervinBdnDevCertificateBox extends StatelessWidget {
   final String image;
   final String text;
   final double width;
   final VoidCallback ontap;
+  final VoidCallback ontapDownload;
 
   const ShervinBdnDevCertificateBox({
     super.key,
@@ -15,6 +18,7 @@ class ShervinBdnDevCertificateBox extends StatelessWidget {
     required this.text,
     required this.width,
     required this.ontap,
+    required this.ontapDownload,
   });
 
   @override
@@ -24,16 +28,18 @@ class ShervinBdnDevCertificateBox extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          width: 350.0,
+          width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
+              ? 350.0
+              : 380.0,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
-            child: Image.network(
-              image,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
+            child: FancyShimmerImage(
+              imageUrl: image,
+              width: width,
+              height: 250.0,
             ),
           ),
         ),
@@ -50,12 +56,19 @@ class ShervinBdnDevCertificateBox extends StatelessWidget {
                   text: text,
                   color: BdnColors.purple,
                   size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                      ? 15.0
-                      : 15.5,
+                      ? 12.5
+                      : 14.0,
+                  family: 'Rubik',
                   weight: FontWeight.bold,
                 ),
               ),
-              ShervinBdnDevViewCertificateButton(ontap: ontap)
+              Row(
+                children: <Widget>[
+                  ShervinBdnDevViewCertificateButton(ontap: ontap),
+                  const SizedBox(width: 3.0),
+                  ShervinBdnDevDownloadButton(ontap: ontapDownload),
+                ],
+              ),
             ],
           ),
         ),

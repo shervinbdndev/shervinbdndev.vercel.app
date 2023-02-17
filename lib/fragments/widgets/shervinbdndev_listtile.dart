@@ -23,6 +23,7 @@ class ShervinBdnDevListTile extends StatelessWidget {
         text: text,
         color: Colors.white,
         size: 20.0,
+        family: 'Vazirmatn',
         weight: FontWeight.bold,
       ),
     );

@@ -1,9 +1,10 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
+import 'package:seo_renderer/renderers/image_renderer/image_renderer_vm.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class FirstPost extends StatefulWidget {
@@ -39,6 +40,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'Constructor',
                 color: BdnColors.purple,
                 size: 35.0,
+                family: 'Rubik',
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -46,6 +48,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'مفهوم',
                 color: Colors.white,
                 size: 35.0,
+                family: 'Vazirmatn',
                 weight: FontWeight.bold,
               ),
             ],
@@ -59,6 +62,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'و با هر نمونه گرفتن از کلاس، این متد فراخونی میشه',
@@ -67,6 +71,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'تو زبان پایتون این متد قابل شخصی سازیه ',
@@ -75,6 +80,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -83,6 +89,7 @@ class _FirstPostState extends State<FirstPost> {
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 12.5
                 : 20.0,
+            family: 'Vazirmatn',
             weight: FontWeight.normal,
           ),
           const SizedBox(height: 30.0),
@@ -94,6 +101,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: '__init__',
                 color: BdnColors.methodColor,
                 size: 35.0,
+                family: 'Rubik',
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -101,6 +109,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'بررسی',
                 color: Colors.white,
                 size: 35.0,
+                family: 'Vazirmatn',
                 weight: FontWeight.bold,
               ),
             ],
@@ -114,6 +123,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'برای ذخیره سازی این مقدار گرفته شده از کاربر',
@@ -122,6 +132,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'استفاده میکنیم __init__ تو پایتون از متد ',
@@ -130,6 +141,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'و اینکه این متد، کانستراکتور نیست',
@@ -138,13 +150,17 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 510.0
                 : 700.0,
             child: ClipRRect(
-              child: Image.asset('assets/pics/post1_1st.png'),
+              child: ImageRenderer(
+                child: Image.asset('assets/pics/post1_1st.png'),
+                alt: 'عکس لود نشد، لطفا صفحه را رفرش کنید',
+              ),
             ),
           ),
           const Row(
@@ -155,6 +171,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: '__new__',
                 color: BdnColors.methodColor,
                 size: 35.0,
+                family: 'Rubik',
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -162,6 +179,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'بررسی',
                 color: Colors.white,
                 size: 35.0,
+                family: 'Vazirmatn',
                 weight: FontWeight.bold,
               ),
             ],
@@ -175,6 +193,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -184,6 +203,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'ولی ما میخوایم که نحوه ایجاد کلاسمون رو شخصی سازی کنیم پس',
@@ -192,6 +212,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'میگیریم و براش شرط میذاریم __init__ مقدار ورودی رو از',
@@ -200,6 +221,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'که اگر مقدار ورودی بعد از مقداردهی، کوچکتر از ۱۸ بود',
@@ -208,6 +230,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           ShervinBdnDevSimpleText(
             text: 'کلاسی ایجاد یا ساخته نشه',
@@ -216,13 +239,17 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
+            family: 'Vazirmatn',
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 510.0
                 : 700.0,
             child: ClipRRect(
-              child: Image.asset('assets/pics/post2_2nd.png'),
+              child: ImageRenderer(
+                child: Image.asset('assets/pics/post2_2nd.png'),
+                alt: 'عکس لود نشد، لطفا صفحه را رفرش کنید',
+              ),
             ),
           ),
           const ShervinBdnDevDivider(),

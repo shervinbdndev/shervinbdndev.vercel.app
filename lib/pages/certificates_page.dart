@@ -3,10 +3,11 @@ import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:image_downloader_web/image_downloader_web.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/boxes/shervinbdndev_certificatebox.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/boxes/shervinbdndev_certificatebox.dart';
 
 class CertificatesPage extends StatefulWidget {
   const CertificatesPage({super.key});
@@ -25,6 +26,8 @@ class _CertificatesPageState extends State<CertificatesPage> {
       meta.seoKeywords('فلاتر, متا, سئو, دارت, وب');
     }
 
+    var deviceWidth = MediaQuery.of(context).size.width;
+
     return ShervinBdnDevScaffold(
       importedWidgets: Padding(
         padding: const EdgeInsets.only(top: 50.0),
@@ -37,6 +40,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
+                  family: 'Vazirmatn',
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -45,6 +49,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
                     text: 'مدارک',
                     color: Colors.white,
                     size: 30.0,
+                    family: 'Vazirmatn',
                     weight: FontWeight.bold,
                   ),
                 ),
@@ -52,54 +57,68 @@ class _CertificatesPageState extends State<CertificatesPage> {
             ),
             const SizedBox(height: 30.0),
             ShervinBdnDevCertificateBox(
-              image:
-                  'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/CS50P.png',
+              image: BdnUrls.harvard,
               text: 'CS50P Harvard University Certificate',
-              width: 350.0,
+              width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
+                  ? 350.0
+                  : 380.0,
               ontap: () async {
                 await launchUrl(
-                  Uri.parse(
-                      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/CS50P.png'),
+                  Uri.parse(BdnUrls.harvard),
                 );
+              },
+              ontapDownload: () async {
+                await WebImageDownloader.downloadImageFromWeb(BdnUrls.harvard);
               },
             ),
             const SizedBox(height: 30.0),
             ShervinBdnDevCertificateBox(
-              image:
-                  'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/web_frontend_course_plstr.jpg',
+              image: BdnUrls.plstrWeb,
               text: 'Poulstar Institute Web Frontend Course',
-              width: 350.0,
+              width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
+                  ? 350.0
+                  : 380.0,
               ontap: () async {
                 await launchUrl(
-                  Uri.parse(
-                      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/web_frontend_course_plstr.jpg'),
+                  Uri.parse(BdnUrls.plstrWeb),
                 );
+              },
+              ontapDownload: () async {
+                await WebImageDownloader.downloadImageFromWeb(BdnUrls.plstrWeb);
               },
             ),
             const SizedBox(height: 30.0),
             ShervinBdnDevCertificateBox(
-              image:
-                  'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/database_course_plstr.jpg',
+              image: BdnUrls.plstrDatabase,
               text: 'Poulstar Institute Database Course',
-              width: 350.0,
+              width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
+                  ? 350.0
+                  : 380.0,
               ontap: () async {
                 await launchUrl(
-                  Uri.parse(
-                      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/database_course_plstr.jpg'),
+                  Uri.parse(BdnUrls.plstrDatabase),
                 );
+              },
+              ontapDownload: () async {
+                await WebImageDownloader.downloadImageFromWeb(
+                    BdnUrls.plstrDatabase);
               },
             ),
             const SizedBox(height: 30.0),
             ShervinBdnDevCertificateBox(
-              image:
-                  'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/PythonCore_certificate.jpg',
+              image: BdnUrls.soloLearn,
               text: 'Solo Learn Python Core',
-              width: 350.0,
+              width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
+                  ? 350.0
+                  : 380.0,
               ontap: () async {
                 await launchUrl(
-                  Uri.parse(
-                      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/PythonCore_certificate.jpg'),
+                  Uri.parse(BdnUrls.soloLearn),
                 );
+              },
+              ontapDownload: () async {
+                await WebImageDownloader.downloadImageFromWeb(
+                    BdnUrls.soloLearn);
               },
             ),
             const ShervinBdnDevDivider(),

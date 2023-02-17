@@ -40,6 +40,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
+                  family: 'Vazirmatn',
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -48,6 +49,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                     text: 'مقالات',
                     color: Colors.white,
                     size: 30.0,
+                    family: 'Vazirmatn',
                     weight: FontWeight.bold,
                   ),
                 ),

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_appbar.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_drawer.dart';
-import 'package:shervinbdndev/fragments/header/shervinbdndev_desktopmenu.dart';
-import 'package:shervinbdndev/fragments/widgets/buttons/shervinbdndev_hiremebutton.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_particles.dart';
+import 'package:shervinbdndev/fragments/header/shervinbdndev_desktopmenu.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/buttons/shervinbdndev_hiremebutton.dart';
 
 class ShervinBdnDevScaffold extends StatelessWidget {
   final Widget importedWidgets;
@@ -68,9 +69,10 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                           height: 280.0,
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(140.0),
-                            child: Image.asset(
-                              'assets/pics/me.jpg',
-                              fit: BoxFit.cover,
+                            child: FancyShimmerImage(
+                              imageUrl: BdnUrls.me,
+                              width: 280.0,
+                              height: 280.0,
                             ),
                           ),
                         ),
@@ -106,6 +108,7 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                       text: 'کپی رایت ۱۴۰۱',
                       color: Colors.white,
                       size: 15.0,
+                      family: 'Vazirmatn',
                       weight: FontWeight.normal,
                     ),
                   ],

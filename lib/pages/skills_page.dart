@@ -1,10 +1,10 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_devicon/flutter_devicon.dart';
 import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_devicon/flutter_devicon.dart';
 import 'package:shervinbdndev/components/component.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_progressbar.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
@@ -39,6 +39,7 @@ class _SkillsPageState extends State<SkillsPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
+                  family: 'Vazirmatn',
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -47,6 +48,7 @@ class _SkillsPageState extends State<SkillsPage> {
                     text: 'مهارت های',
                     color: Colors.white,
                     size: 30.0,
+                    family: 'Vazirmatn',
                     weight: FontWeight.bold,
                   ),
                 ),

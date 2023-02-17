@@ -1,6 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
@@ -36,6 +36,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                   color: BdnColors.purple,
                   size: 30.0,
                   weight: FontWeight.bold,
+                  family: 'Vazirmatn',
                 ),
                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
@@ -44,6 +45,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                     color: Colors.white,
                     size: 30.0,
                     weight: FontWeight.bold,
+                    family: 'Vazirmatn',
                   ),
                 ),
               ],
@@ -56,6 +58,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                 color: Colors.white,
                 size: 13.0,
                 weight: FontWeight.normal,
+                family: 'Vazirmatn',
               ),
             ),
             Padding(
@@ -68,6 +71,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                 color: Colors.white,
                 size: 13.0,
                 weight: FontWeight.normal,
+                family: 'Vazirmatn',
               ),
             ),
             Padding(
@@ -77,6 +81,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                 color: Colors.white,
                 size: 13.0,
                 weight: FontWeight.normal,
+                family: 'Vazirmatn',
               ),
             ),
             ShervinBdnDevDivider(),
@@ -94,6 +99,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: BdnColors.purple,
                         size: 30.0,
                         weight: FontWeight.bold,
+                        family: 'Vazirmatn',
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 10.0),
@@ -102,6 +108,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                           color: Colors.white,
                           size: 30.0,
                           weight: FontWeight.bold,
+                          family: 'Vazirmatn',
                         ),
                       ),
                     ],
@@ -115,6 +122,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
+                        family: 'Vazirmatn',
                       ),
                       SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
@@ -122,6 +130,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 22.0,
                         weight: FontWeight.bold,
+                        family: 'Vazirmatn',
                       ),
                     ],
                   ),
@@ -134,6 +143,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
+                        family: 'Vazirmatn',
                       ),
                       SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
@@ -141,6 +151,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 22.0,
                         weight: FontWeight.bold,
+                        family: 'Vazirmatn',
                       ),
                     ],
                   ),
@@ -153,6 +164,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
+                        family: 'Vazirmatn',
                       ),
                       SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
@@ -160,6 +172,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 22.0,
                         weight: FontWeight.bold,
+                        family: 'Vazirmatn',
                       ),
                     ],
                   ),
@@ -172,6 +185,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
+                        family: 'Rubik',
                       ),
                       SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
@@ -179,6 +193,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         color: Colors.white,
                         size: 22.0,
                         weight: FontWeight.bold,
+                        family: 'Vazirmatn',
                       ),
                     ],
                   ),

@@ -7,14 +7,21 @@ import 'package:shervinbdndev/pages/skills_page.dart';
 import 'package:shervinbdndev/posts/second_post.dart';
 import 'package:shervinbdndev/pages/projects_page.dart';
 import 'package:shervinbdndev/pages/schooling_page.dart';
+import 'package:seo_renderer/helpers/renderer_state.dart';
 import 'package:shervinbdndev/pages/certificates_page.dart';
 import 'package:shervinbdndev/pages/bloglistview_page.dart';
+import 'package:seo_renderer/helpers/robot_detector_vm.dart';
 
 void main() {
   if (kIsWeb) {
     MetaSEO().seoMetaConfig();
   }
-  runApp(const MyApp());
+  runApp(
+    const RobotDetector(
+      debug: false,
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -36,6 +43,7 @@ class MyApp extends StatelessWidget {
         '/certificates': (context) => const CertificatesPage(),
       },
       debugShowCheckedModeBanner: !true,
+      navigatorObservers: [seoRouteObserver],
     );
   }
 }

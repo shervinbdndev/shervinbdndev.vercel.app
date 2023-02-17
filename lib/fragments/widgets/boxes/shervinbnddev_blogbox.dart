@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:like_button/like_button.dart';
 import 'package:shervinbdndev/components/component.dart';
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 
 class ShervinBdnDevBlogBox extends StatelessWidget {
@@ -46,9 +47,10 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
               cursor: MouseCursor.defer,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                child: Image.asset(
-                  image,
-                  fit: BoxFit.cover,
+                child: FancyShimmerImage(
+                  imageUrl: image,
+                  width: 300.0,
+                  height: 300.0,
                 ),
               ),
             ),
@@ -57,7 +59,7 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
           SizedBox(
             width: 300.0,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 LikeButton(
@@ -78,13 +80,6 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
                   likeCountAnimationType: LikeCountAnimationType.part,
                   isLiked: false,
                   animationDuration: const Duration(milliseconds: 1000),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: const Icon(
-                    Icons.comment_rounded,
-                    color: Colors.grey,
-                  ),
                 ),
                 LikeButton(
                   likeCountAnimationDuration:
