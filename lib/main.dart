@@ -6,6 +6,7 @@ import 'package:shervinbdndev/posts/first_post.dart';
 import 'package:shervinbdndev/pages/skills_page.dart';
 import 'package:shervinbdndev/posts/second_post.dart';
 import 'package:shervinbdndev/pages/projects_page.dart';
+import 'package:shervinbdndev/pages/settings_page.dart';
 import 'package:shervinbdndev/pages/schooling_page.dart';
 import 'package:seo_renderer/helpers/renderer_state.dart';
 import 'package:shervinbdndev/pages/certificates_page.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         '/skills': (context) => const SkillsPage(),
         '/schooling': (context) => const SchoolingPage(),
         '/certificates': (context) => const CertificatesPage(),
+        // '/settings': (context) => const SettingsPage(),
       },
       debugShowCheckedModeBanner: !true,
       navigatorObservers: [seoRouteObserver],

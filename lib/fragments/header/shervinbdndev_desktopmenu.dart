@@ -74,6 +74,15 @@ class ShervinBdnDevDesktopMenu extends StatelessWidget {
                     );
                   },
                 ),
+                // ShervinBdnDevPageRouteWidget(
+                //   text: 'تنظیمات',
+                //   ontap: () {
+                //     bdnRouter(
+                //       context,
+                //       '/settings',
+                //     );
+                //   },
+                // ),
               ],
             ),
           ),

@@ -12,21 +12,21 @@ class ShervinBdnDevDownloadButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ShervinBdnDevRipple(
-      ontap: ontap,
-      widget: Container(
-        width: 40.0,
-        height: 30.0,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5.0),
-          color: Colors.green,
-        ),
-        child: const Icon(
+    return Container(
+      width: 40.0,
+      height: 30.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(5.0),
+        color: Colors.green,
+      ),
+      child: ShervinBdnDevRipple(
+        ontap: ontap,
+        widget: const Icon(
           Icons.downloading_rounded,
           color: BdnColors.blue,
         ),
+        bd: 5.0,
       ),
-      bd: 5.0,
     );
   }
 }

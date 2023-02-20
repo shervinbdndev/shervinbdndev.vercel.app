@@ -7,7 +7,9 @@ import 'package:shervinbdndev/fragments/widgets/shervinbdndev_listtile.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevDrawer extends StatelessWidget {
-  const ShervinBdnDevDrawer({super.key});
+  const ShervinBdnDevDrawer({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +92,16 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                     text: 'مدارک',
                   ),
                 ),
+                // ShervinBdnDevRipple(
+                //   bd: 0,
+                //   ontap: () {
+                //     bdnRouter(context, '/settings');
+                //   },
+                //   widget: const ShervinBdnDevListTile(
+                //     icon: FontAwesomeIcons.gear,
+                //     text: 'تنظیمات',
+                //   ),
+                // ),
               ],
             ),
             const Padding(
@@ -102,7 +114,7 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   ShervinBdnDevSimpleText(
-                    text: 'V 1.2.9',
+                    text: BdnConfig.websiteVersion,
                     color: BdnColors.blue,
                     size: 12.0,
                     weight: FontWeight.bold,

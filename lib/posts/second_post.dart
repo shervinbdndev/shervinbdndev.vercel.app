@@ -144,8 +144,8 @@ class _SecondPostState extends State<SecondPost> {
                 : 700.0,
             child: ClipRRect(
               child: ImageRenderer(
-                child: Image.asset('assets/pics/post2_import.png'),
                 alt: 'عکس لود نشد، صفحه را رفرش کنید',
+                child: Image.asset('assets/pics/post2_import.png'),
               ),
             ),
           ),
@@ -236,8 +236,8 @@ class _SecondPostState extends State<SecondPost> {
                 : 700.0,
             child: ClipRRect(
               child: ImageRenderer(
-                child: Image.asset('assets/pics/post2_dimport.png'),
                 alt: 'عکس لود نشد، صفحه را رفرش کنید',
+                child: Image.asset('assets/pics/post2_dimport.png'),
               ),
             ),
           ),

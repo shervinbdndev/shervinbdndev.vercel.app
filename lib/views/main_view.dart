@@ -66,8 +66,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                 top: 8.0,
               ),
               child: ShervinBdnDevSimpleText(
-                text:
-                    'وقتمو صرف ساختن اپلیکیشن های موبایل با فریمورک فلاتر کردم',
+                text: 'وقتمو صرف ساختن اپلیکیشن های موبایل و توسعه بک اند',
                 color: Colors.white,
                 size: 13.0,
                 weight: FontWeight.normal,
@@ -77,7 +76,7 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
             Padding(
               padding: EdgeInsets.only(top: 8.0),
               child: ShervinBdnDevSimpleText(
-                text: 'و کمی هم توسعه بک اند با جنگو کار میکنم',
+                text: 'با تکنولوژی های مختلف کردم و عاشق کارم هستم',
                 color: Colors.white,
                 size: 13.0,
                 weight: FontWeight.normal,
