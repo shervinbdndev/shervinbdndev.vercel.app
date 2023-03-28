@@ -48,6 +48,15 @@ class ShervinBdnDevDesktopMenu extends StatelessWidget {
                   },
                 ),
                 ShervinBdnDevPageRouteWidget(
+                  text: 'قطعه کد',
+                  ontap: () {
+                    bdnRouter(
+                      context,
+                      '/snippets',
+                    );
+                  },
+                ),
+                ShervinBdnDevPageRouteWidget(
                   text: 'مهارت ها',
                   ontap: () {
                     bdnRouter(
@@ -74,15 +83,6 @@ class ShervinBdnDevDesktopMenu extends StatelessWidget {
                     );
                   },
                 ),
-                // ShervinBdnDevPageRouteWidget(
-                //   text: 'تنظیمات',
-                //   ontap: () {
-                //     bdnRouter(
-                //       context,
-                //       '/settings',
-                //     );
-                //   },
-                // ),
               ],
             ),
           ),

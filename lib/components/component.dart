@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
 class BdnConfig {
-  static const double websiteHeaderHeight = 500.0;
+  static const double websiteHeaderHeight = 555.0;
   static const double websiteResponsivenessLimit = 1100.0;
   static const double websiteResponsivenessLimitForTablet = 800.0;
   static const double websiteProjectBoxWidth = 300.0;
   static const double websiteProjectBoxHeight = 150.0;
-  static const String websiteVersion = 'V 1.2.9 Stable';
+  static const String websiteVersion = 'V 1.2.11 Stable';
 }
 
 class BdnColors {
   static const Color blue = Color(0xff1D293E);
   static const Color purple = Color(0xff6F64E7);
+  static const Color secondaryPurple = Color(0xff393D78);
   static const Color pyBlue = Color.fromARGB(255, 64, 154, 223);
   static const Color methodColor = Color(0xffCECC9F);
   static const Color keywordColor = Color(0xffC386BF);
@@ -36,6 +37,8 @@ class BdnUrls {
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/soon_per.jpg';
   static const String harvard =
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/CS50P.png';
+  static const String harvardWeb =
+      'https://cs50.harvard.edu/certificates/77ce450e-43dd-4b81-802a-942423fdf2c8';
   static const String plstrWeb =
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev/master/Certificates/web_frontend_course_plstr.jpg';
   static const String plstrDatabase =

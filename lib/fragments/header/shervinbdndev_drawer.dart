@@ -7,9 +7,7 @@ import 'package:shervinbdndev/fragments/widgets/shervinbdndev_listtile.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevDrawer extends StatelessWidget {
-  const ShervinBdnDevDrawer({
-    super.key,
-  });
+  const ShervinBdnDevDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,8 +56,18 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                     bdnRouter(context, '/blog');
                   },
                   widget: const ShervinBdnDevListTile(
-                    icon: Icons.code,
+                    icon: Icons.menu_book_rounded,
                     text: 'بلاگ',
+                  ),
+                ),
+                ShervinBdnDevRipple(
+                  bd: 0,
+                  ontap: () {
+                    bdnRouter(context, '/snippets');
+                  },
+                  widget: const ShervinBdnDevListTile(
+                    icon: Icons.code,
+                    text: 'قطعه کد',
                   ),
                 ),
                 ShervinBdnDevRipple(
@@ -92,16 +100,6 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                     text: 'مدارک',
                   ),
                 ),
-                // ShervinBdnDevRipple(
-                //   bd: 0,
-                //   ontap: () {
-                //     bdnRouter(context, '/settings');
-                //   },
-                //   widget: const ShervinBdnDevListTile(
-                //     icon: FontAwesomeIcons.gear,
-                //     text: 'تنظیمات',
-                //   ),
-                // ),
               ],
             ),
             const Padding(

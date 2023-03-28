@@ -2,20 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/views/main_view.dart';
-import 'package:shervinbdndev/posts/first_post.dart';
-import 'package:shervinbdndev/pages/skills_page.dart';
-import 'package:shervinbdndev/posts/second_post.dart';
-import 'package:shervinbdndev/pages/projects_page.dart';
-import 'package:shervinbdndev/pages/settings_page.dart';
-import 'package:shervinbdndev/pages/schooling_page.dart';
+import 'package:shervinbdndev/views/skills_page.dart';
+import 'package:shervinbdndev/views/projects_page.dart';
+import 'package:shervinbdndev/views/snippets_page.dart';
+import 'package:shervinbdndev/views/schooling_page.dart';
 import 'package:seo_renderer/helpers/renderer_state.dart';
-import 'package:shervinbdndev/pages/certificates_page.dart';
-import 'package:shervinbdndev/pages/bloglistview_page.dart';
+import 'package:shervinbdndev/views/posts/first_post.dart';
+import 'package:shervinbdndev/views/posts/second_post.dart';
+import 'package:shervinbdndev/views/certificates_page.dart';
+import 'package:shervinbdndev/views/bloglistview_page.dart';
 import 'package:seo_renderer/helpers/robot_detector_vm.dart';
+import 'package:shervinbdndev/views/snippets/first_snippet.dart';
 
 void main() {
   if (kIsWeb) {
-    MetaSEO().seoMetaConfig();
+    MetaSEO().config();
   }
   runApp(
     const RobotDetector(
@@ -40,9 +41,11 @@ class MyApp extends StatelessWidget {
         '/blog/imports-in-python': (context) => const SecondPost(),
         '/projects': (context) => const ProjectsPage(),
         '/skills': (context) => const SkillsPage(),
+        '/snippets': (context) => const SnippetsPage(),
+        '/snippets/how-to-get-public-ip-using-python': (context) =>
+            const FirstSnippet(),
         '/schooling': (context) => const SchoolingPage(),
         '/certificates': (context) => const CertificatesPage(),
-        // '/settings': (context) => const SettingsPage(),
       },
       debugShowCheckedModeBanner: !true,
       navigatorObservers: [seoRouteObserver],
