@@ -29,6 +29,8 @@ class BdnUrls {
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/post2_import.png';
   static const String post2_2 =
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/post2_dimport.png';
+  static const String snpt1 =
+      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/public_ip_snippet.jpg';
   static const String fptl =
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/first_post_thumbnail.jpg';
   static const String sptl =

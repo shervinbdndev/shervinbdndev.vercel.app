@@ -36,7 +36,7 @@ class _SnippetsPageState extends State<SnippetsPage> {
                 ? Column(
                     children: <Widget>[
                       ShervinBdnDevBlogBox(
-                        image: 'assets/pics/public_ip_snippet.jpg',
+                        image: BdnUrls.snpt1,
                         ontap: () async {
                           bdnRouter(
                             context,
@@ -80,7 +80,7 @@ class _SnippetsPageState extends State<SnippetsPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           ShervinBdnDevBlogBox(
-                            image: 'assets/pics/public_ip_snippet.jpg',
+                            image: BdnUrls.snpt1,
                             ontap: () async {
                               bdnRouter(
                                 context,
