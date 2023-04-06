@@ -93,6 +93,16 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                 ShervinBdnDevRipple(
                   bd: 0,
                   ontap: () {
+                    bdnRouter(context, '/donate');
+                  },
+                  widget: const ShervinBdnDevListTile(
+                    icon: Icons.attach_money_rounded,
+                    text: 'حمایت',
+                  ),
+                ),
+                ShervinBdnDevRipple(
+                  bd: 0,
+                  ontap: () {
                     bdnRouter(context, '/certificates');
                   },
                   widget: const ShervinBdnDevListTile(

@@ -51,34 +51,34 @@ class BdnAnimatedText extends StatelessWidget {
           TypewriterAnimatedText(
             'به وبسایت من خوش آمدید',
             textStyle: TextStyle(
-              fontFamily: 'Vazirmatn',
+              fontFamily: BdnConfig.websitePersianFontFamily,
               color: Colors.white,
               fontSize: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                   ? 20.0
                   : 25.0,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.normal,
             ),
           ),
           TypewriterAnimatedText(
             'من شروین بدن آرا هستم',
             textStyle: TextStyle(
-              fontFamily: 'Vazirmatn',
+              fontFamily: BdnConfig.websitePersianFontFamily,
               color: Colors.white,
               fontSize: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                   ? 20.0
                   : 25.0,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.normal,
             ),
           ),
           TypewriterAnimatedText(
             'یک توسعه دهنده و برنامه نویس وب',
             textStyle: TextStyle(
-              fontFamily: 'Vazirmatn',
+              fontFamily: BdnConfig.websitePersianFontFamily,
               color: Colors.white,
               fontSize: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                   ? 20.0
                   : 25.0,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.normal,
             ),
           ),
         ],

@@ -16,7 +16,7 @@ dynamic scaffoldSnackbar(BuildContext context, String text) {
           text: text,
           color: BdnColors.blue,
           size: 20.0,
-          family: 'Vazirmatn',
+          family: BdnConfig.websitePersianFontFamily,
           weight: FontWeight.bold,
         ),
       ),

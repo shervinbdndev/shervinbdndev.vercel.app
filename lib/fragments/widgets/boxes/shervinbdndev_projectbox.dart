@@ -3,11 +3,13 @@ import 'package:hovering/hovering.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
+import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevProjectBox extends StatelessWidget {
   final String image;
   final VoidCallback ontap;
   final double width;
+  final String text;
   final double height;
 
   const ShervinBdnDevProjectBox({
@@ -15,15 +17,18 @@ class ShervinBdnDevProjectBox extends StatelessWidget {
     required this.image,
     required this.ontap,
     required this.width,
+    required this.text,
     required this.height,
   });
 
   @override
   Widget build(BuildContext context) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+
     return Padding(
-      padding: const EdgeInsets.only(
-        left: 10.0,
-        top: 10.0,
+      padding: EdgeInsets.only(
+        top: 20.0,
+        left: deviceWidth <= BdnConfig.websiteResponsivenessLimit ? 0 : 20.0,
       ),
       child: ShervinBdnDevRipple(
         bd: 10.0,
@@ -40,15 +45,51 @@ class ShervinBdnDevProjectBox extends StatelessWidget {
               color: BdnColors.purple,
             ),
           ),
-          cursor: MouseCursor.defer,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10.0),
-            child: FancyShimmerImage(
-              imageUrl: image,
-              width: 380.0,
-              height: 180.0,
-              shimmerBaseColor: BdnColors.purple,
-            ),
+          cursor: SystemMouseCursors.click,
+          child: Stack(
+            alignment: Alignment.bottomCenter,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(bottom: 70.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: SizedBox(
+                    width: width + 30,
+                    height: height + 30,
+                    child: FancyShimmerImage(imageUrl: image),
+                  ),
+                ),
+              ),
+              Container(
+                width: width + 30,
+                height: 88.0,
+                decoration: const BoxDecoration(
+                  color: BdnColors.purple,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15.0),
+                    topRight: Radius.circular(15.0),
+                    bottomLeft: Radius.circular(10.0),
+                    bottomRight: Radius.circular(10.0),
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0),
+                      child: ShervinBdnDevSimpleText(
+                        text: text,
+                        color: BdnColors.blue,
+                        size: 19.0,
+                        family: BdnConfig.websitePersianFontFamily,
+                        weight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),

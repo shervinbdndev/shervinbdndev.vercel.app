@@ -84,6 +84,7 @@ flutter:
   assets:
     - assets/pics/
     - assets/svgs/
+    - assets/gifs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -97,10 +98,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Vazirmatn
+    - family: Lalezar
       fonts:
-        - asset: assets/fonts/Vazirmatn-Bold.ttf
-        - asset: assets/fonts/Vazirmatn-Light.ttf
+        - asset: assets/fonts/Lalezar-Regular.ttf
     - family: Rubik
       fonts:
         - asset: assets/fonts/Rubik-Bold.ttf

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class BdnConfig {
+  static const String websitePersianFontFamily = 'Lalezar';
+  static const String websiteEnglishFontFamily = 'Rubik';
   static const double websiteHeaderHeight = 555.0;
-  static const double websiteResponsivenessLimit = 1100.0;
-  static const double websiteResponsivenessLimitForTablet = 800.0;
-  static const double websiteProjectBoxWidth = 300.0;
-  static const double websiteProjectBoxHeight = 150.0;
-  static const String websiteVersion = 'V 1.2.11 Stable';
+  static const double websiteFooterHeight = 100.0;
+  static const double websiteResponsivenessLimit = 1200.0;
+  static const double websiteProjectBoxWidth = 380.0;
+  static const double websiteProjectBoxHeight = 270.0;
+  static const String websiteVersion = 'V 1.2.12 Stable';
 }
 
 class BdnColors {
@@ -19,6 +21,9 @@ class BdnColors {
 }
 
 class BdnUrls {
+  static const String github = 'https://github.com/shervinbdndev/';
+  static const String mouseGif =
+      'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/gifs/mouse.gif';
   static const String me =
       'https://raw.githubusercontent.com/shervinbdndev/shervinbdndev.vercel.app/master/assets/pics/me.jpg';
   static const String post1_1 =

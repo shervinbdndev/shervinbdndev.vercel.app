@@ -5,8 +5,8 @@ import 'package:shervinbdndev/components/component.dart';
 import 'package:lecle_bubble_timeline/models/timeline_item.dart';
 import 'package:lecle_bubble_timeline/lecle_bubble_timeline.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class SchoolingPage extends StatefulWidget {
   const SchoolingPage({super.key});
@@ -37,7 +37,7 @@ class _SchoolingPageState extends State<SchoolingPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
-                  family: 'Vazirmatn',
+                  family: BdnConfig.websitePersianFontFamily,
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -46,7 +46,7 @@ class _SchoolingPageState extends State<SchoolingPage> {
                     text: 'تحصیلات',
                     color: Colors.white,
                     size: 30.0,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                     weight: FontWeight.bold,
                   ),
                 ),
@@ -70,19 +70,19 @@ class _SchoolingPageState extends State<SchoolingPage> {
                   description: 'هنرستان فنی و حرفه ای علم و صنعت نوین رشت',
                   titleStyle: TextStyle(
                     fontSize: 25.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: BdnColors.purple,
                     fontWeight: FontWeight.bold,
                   ),
                   subtitleStyle: TextStyle(
                     fontSize: 15.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
                   ),
                   descriptionStyle: TextStyle(
                     fontSize: 15.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
                   ),
@@ -100,26 +100,26 @@ class _SchoolingPageState extends State<SchoolingPage> {
                       'رشته کامپیوتر - نرم افزار \n دانشکده فنی و حرفه ای شهید چمران رشت',
                   titleStyle: TextStyle(
                     fontSize: 25.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: BdnColors.purple,
                     fontWeight: FontWeight.bold,
                   ),
                   subtitleStyle: TextStyle(
                     fontSize: 15.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
                   ),
                   descriptionStyle: TextStyle(
                     fontSize: 15.0,
-                    fontFamily: 'Vazirmatn',
+                    fontFamily: BdnConfig.websitePersianFontFamily,
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
               ],
             ),
-            ShervinBdnDevDivider(),
+            ShervinBdnDevHorizantalDivider(),
           ],
         ),
       ),

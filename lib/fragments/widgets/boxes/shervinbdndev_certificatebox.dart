@@ -59,7 +59,7 @@ class ShervinBdnDevCertificateBox extends StatelessWidget {
                   size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                       ? 12.5
                       : 14.0,
-                  family: 'Rubik',
+                  family: BdnConfig.websiteEnglishFontFamily,
                   weight: FontWeight.bold,
                 ),
               ),

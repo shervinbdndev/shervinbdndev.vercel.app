@@ -4,8 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_blob.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class ShervinBdnDevMainView extends StatefulWidget {
   const ShervinBdnDevMainView({super.key});
@@ -25,10 +25,18 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
     }
 
     var deviceWidth = MediaQuery.of(context).size.width;
+    var deviceHeight = MediaQuery.of(context).size.height;
 
     return ShervinBdnDevScaffold(
       importedWidgets: Column(
         children: <Widget>[
+          Center(
+            child: SizedBox(
+              width: 90.0,
+              height: 90.0,
+              child: Image.network(BdnUrls.mouseGif),
+            ),
+          ),
           ShervinBdnDevBlob(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 460.0
@@ -50,8 +58,8 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         text: 'کی هستم؟',
                         color: BdnColors.secondaryPurple,
                         size: 30.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 10.0),
@@ -59,8 +67,8 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                           text: 'من',
                           color: Colors.white,
                           size: 30.0,
-                          weight: FontWeight.bold,
-                          family: 'Vazirmatn',
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
                         ),
                       ),
                     ],
@@ -72,21 +80,21 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: 'وقتمو صرف ساختن اپلیکیشن های موبایل و توسعه بک اند',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: 'با تکنولوژی های مختلف کردم و عاشق کارم هستم',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                 ],
               ),
@@ -113,8 +121,8 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                         text: 'برنامه نویسی',
                         color: BdnColors.secondaryPurple,
                         size: 30.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 10.0),
@@ -122,8 +130,8 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                           text: 'شروع',
                           color: Colors.white,
                           size: 30.0,
-                          weight: FontWeight.bold,
-                          family: 'Vazirmatn',
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
                         ),
                       ),
                     ],
@@ -135,42 +143,42 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: 'بهش علاقه مند شدم، بدون اینکه هیچ ذهنیتی در گذشته',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: ' ازش داشته باشم، کار کردن با تکنولوژی های مختلف و',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: 'زبان های برنامه نویسی و کاراییشون تو دنیای امروزی',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: 'درحال حاضر کاریه که انجام میدم',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                   ShervinBdnDevSimpleText(
                     text: '(😂 یعنی همچنان دارم یادمیگیرم)',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                 ],
               ),
@@ -183,22 +191,22 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
             height: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 460.0
                 : 500.0,
-            importedWidgets: const Padding(
-              padding: EdgeInsets.only(
+            importedWidgets: Padding(
+              padding: const EdgeInsets.only(
                 top: 20.0,
                 right: 25.0,
               ),
               child: Column(
                 children: <Widget>[
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ShervinBdnDevSimpleText(
                         text: 'بلدم؟',
                         color: BdnColors.secondaryPurple,
                         size: 30.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 10.0),
@@ -206,35 +214,34 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                           text: 'چیا',
                           color: Colors.white,
                           size: 30.0,
-                          weight: FontWeight.bold,
-                          family: 'Vazirmatn',
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 15.0),
-                  ShervinBdnDevSimpleText(
-                    text:
-                        'اگه رو گوشی هستی رو منوی بالا کلیک کن بعد بخش مهارت ها',
-                    color: Colors.white,
-                    size: 13.0,
-                    weight: FontWeight.normal,
-                    family: 'Vazirmatn',
-                  ),
-                  ShervinBdnDevSimpleText(
-                    text:
-                        'اگه رو تبلت یا کامپیوتر هستی رو بخش مهارت ها کلیک کن',
-                    color: Colors.white,
-                    size: 13.0,
-                    weight: FontWeight.normal,
-                    family: 'Vazirmatn',
-                  ),
-                  ShervinBdnDevSimpleText(
+                  const SizedBox(height: 15.0),
+                  deviceWidth <= BdnConfig.websiteResponsivenessLimit
+                      ? const ShervinBdnDevSimpleText(
+                          text: 'رو منوی بالا کلیک کن بعد بخش مهارت ها',
+                          color: Colors.white,
+                          size: 13.0,
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
+                        )
+                      : const ShervinBdnDevSimpleText(
+                          text: 'رو بخش مهارت ها کلیک کن',
+                          color: Colors.white,
+                          size: 13.0,
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
+                        ),
+                  const ShervinBdnDevSimpleText(
                     text: '😊 به همین سادگی',
                     color: Colors.white,
                     size: 13.0,
                     weight: FontWeight.normal,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                   ),
                 ],
               ),
@@ -247,21 +254,21 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
             height: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 460.0
                 : 500.0,
-            importedWidgets: const Padding(
-              padding: EdgeInsets.only(
+            importedWidgets: Padding(
+              padding: const EdgeInsets.only(
                 top: 30.0,
               ),
               child: Column(
                 children: <Widget>[
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ShervinBdnDevSimpleText(
                         text: 'بیشتر',
                         color: BdnColors.secondaryPurple,
                         size: 30.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 10.0),
@@ -269,97 +276,105 @@ class _ShervinBdnDevMainViewState extends State<ShervinBdnDevMainView> {
                           text: 'مشخصات',
                           color: Colors.white,
                           size: 30.0,
-                          weight: FontWeight.bold,
-                          family: 'Vazirmatn',
+                          weight: FontWeight.normal,
+                          family: BdnConfig.websitePersianFontFamily,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      ShervinBdnDevSimpleText(
+                      const ShervinBdnDevSimpleText(
                         text: 'شروین بدن آرا',
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
-                        family: 'Vazirmatn',
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
                         text: ': نام و نام خانوادگی',
                         color: Colors.white,
-                        size: 22.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        size: deviceWidth == 375.0 && deviceHeight == 667
+                            ? 18
+                            : 22.0,
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                     ],
                   ),
-                  SizedBox(height: 2.0),
+                  const SizedBox(height: 2.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      ShervinBdnDevSimpleText(
+                      const ShervinBdnDevSimpleText(
                         text: '۱۳۸۲',
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
-                        family: 'Vazirmatn',
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
                         text: ': سال تولد',
                         color: Colors.white,
-                        size: 22.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        size: deviceWidth == 375.0 && deviceHeight == 667
+                            ? 18
+                            : 22.0,
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                     ],
                   ),
-                  SizedBox(height: 2.0),
+                  const SizedBox(height: 2.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      ShervinBdnDevSimpleText(
+                      const ShervinBdnDevSimpleText(
                         text: 'ایران، رشت',
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
-                        family: 'Vazirmatn',
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
                         text: ': آدرس',
                         color: Colors.white,
-                        size: 22.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        size: deviceWidth == 375.0 && deviceHeight == 667
+                            ? 18
+                            : 22.0,
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                     ],
                   ),
-                  SizedBox(height: 2.0),
+                  const SizedBox(height: 2.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      ShervinBdnDevSimpleText(
+                      const ShervinBdnDevSimpleText(
                         text: 'shervin2234@gmail.com',
                         color: Colors.white,
                         size: 14.0,
                         weight: FontWeight.normal,
-                        family: 'Rubik',
+                        family: BdnConfig.websiteEnglishFontFamily,
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       ShervinBdnDevSimpleText(
                         text: ': جیمیل',
                         color: Colors.white,
-                        size: 22.0,
-                        weight: FontWeight.bold,
-                        family: 'Vazirmatn',
+                        size: deviceWidth == 375.0 && deviceHeight == 667
+                            ? 18
+                            : 22.0,
+                        weight: FontWeight.normal,
+                        family: BdnConfig.websitePersianFontFamily,
                       ),
                     ],
                   ),
-                  ShervinBdnDevDivider(),
+                  const ShervinBdnDevHorizantalDivider(),
                 ],
               ),
             ),

@@ -41,7 +41,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               const SizedBox(width: 10.0),
@@ -51,7 +51,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               ShervinBdnDevSimpleText(
@@ -60,7 +60,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -71,10 +71,10 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 'برای ارسال درخواست سمت سرور مورد نظر استفاده میکنیم requests از ماژول',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           const SizedBox(height: 15.0),
           SizedBox(
@@ -86,7 +86,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 : 60.0,
             child: AnySyntaxHighlighter(
               importText,
-              useGoogleFont: 'Rubik',
+              useGoogleFont: BdnConfig.websiteEnglishFontFamily,
               hasCopyButton: true,
               lineNumbers: true,
               isSelectableText: true,
@@ -112,16 +112,16 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Rubik',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               ShervinBdnDevSimpleText(
-                text: ' ارسال درخواست از نوع',
+                text: ' درخواست از نوع',
                 color: Colors.white,
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               const SizedBox(width: 10.0),
@@ -131,7 +131,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               ShervinBdnDevSimpleText(
@@ -140,7 +140,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -151,38 +151,38 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 'سمت آدرس مورد نظر ارسال میکنیم get از نوع https درخواستی تحت پروتکل',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'ذخیره میکنیم req و خروجی رو تو متغیری به نام',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
                 'یادمون باشه که بعد از ارسال درخواست باید دیتای دریافت شده رو ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'رو فراخونی میکنیم json() کنیم پس در آخر، متد json تبدیل به',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           const SizedBox(height: 15.0),
           SizedBox(
@@ -194,7 +194,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 : 70.0,
             child: AnySyntaxHighlighter(
               '$importText\nreq = requests.get(url="https://api.myip.com").json()',
-              useGoogleFont: 'Rubik',
+              useGoogleFont: BdnConfig.websiteEnglishFontFamily,
               overrideDecoration: BoxDecoration(
                 color: BdnColors.secondaryPurple,
                 borderRadius: BorderRadius.circular(3.0),
@@ -215,12 +215,12 @@ class _FirstSnippetState extends State<FirstSnippet> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               ShervinBdnDevSimpleText(
-                text: 'نمایش آی پی در محیط کنسول',
+                text: 'نمایش در خروجی',
                 color: Colors.white,
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               const SizedBox(width: 10.0),
@@ -230,7 +230,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               ShervinBdnDevSimpleText(
@@ -239,7 +239,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                     ? 28.0
                     : 33.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -250,20 +250,20 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 'یی که برامون فرستاده شده json رو از دیتای نوع ip در نهایت هم کلید ',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
                 'در محیط کنسول نمایشش میدیم print انتخاب میکنیم و با استفاده از متد',
             color: Colors.white,
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
-                ? 15.0
+                ? 13.0
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           const SizedBox(height: 15.0),
           SizedBox(
@@ -275,7 +275,7 @@ class _FirstSnippetState extends State<FirstSnippet> {
                 : 80.0,
             child: AnySyntaxHighlighter(
               '$importText\nreq = requests.get(url="https://api.myip.com").json()\nprint(req["ip"])',
-              useGoogleFont: 'Rubik',
+              useGoogleFont: BdnConfig.websiteEnglishFontFamily,
               overrideDecoration: BoxDecoration(
                 color: BdnColors.secondaryPurple,
                 borderRadius: BorderRadius.circular(3.0),

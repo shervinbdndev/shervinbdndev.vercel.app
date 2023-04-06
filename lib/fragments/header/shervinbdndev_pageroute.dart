@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shervinbdndev/components/component.dart';
 
 class ShervinBdnDevPageRouteWidget extends StatelessWidget {
   final String text;
@@ -14,15 +15,18 @@ class ShervinBdnDevPageRouteWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 20.0),
-      child: GestureDetector(
-        onTap: ontap,
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontFamily: 'Vazirmatn',
-            color: Colors.white,
-            fontSize: 15.0,
-            fontWeight: FontWeight.bold,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: ontap,
+          child: Text(
+            text,
+            style: const TextStyle(
+              fontFamily: BdnConfig.websitePersianFontFamily,
+              color: Colors.white,
+              fontSize: 15.0,
+              fontWeight: FontWeight.normal,
+            ),
           ),
         ),
       ),

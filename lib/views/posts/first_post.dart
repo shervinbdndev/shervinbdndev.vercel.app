@@ -3,9 +3,9 @@ import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:seo_renderer/renderers/image_renderer/image_renderer_vm.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class FirstPost extends StatefulWidget {
   const FirstPost({super.key});
@@ -40,7 +40,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'Constructor',
                 color: BdnColors.purple,
                 size: 35.0,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -48,7 +48,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'مفهوم',
                 color: Colors.white,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -62,7 +62,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'و با هر نمونه گرفتن از کلاس، این متد فراخونی میشه',
@@ -71,7 +71,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'تو زبان پایتون این متد قابل شخصی سازیه ',
@@ -80,7 +80,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -89,7 +89,7 @@ class _FirstPostState extends State<FirstPost> {
             size: deviceWidth <= BdnConfig.websiteResponsivenessLimit
                 ? 12.5
                 : 20.0,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
             weight: FontWeight.normal,
           ),
           const SizedBox(height: 30.0),
@@ -101,7 +101,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: '__init__',
                 color: BdnColors.methodColor,
                 size: 35.0,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -109,7 +109,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'بررسی',
                 color: Colors.white,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -123,7 +123,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'برای ذخیره سازی این مقدار گرفته شده از کاربر',
@@ -132,7 +132,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'استفاده میکنیم __init__ تو پایتون از متد ',
@@ -141,7 +141,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'و اینکه این متد، کانستراکتور نیست',
@@ -150,7 +150,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
@@ -171,7 +171,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: '__new__',
                 color: BdnColors.methodColor,
                 size: 35.0,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -179,7 +179,7 @@ class _FirstPostState extends State<FirstPost> {
                 text: 'بررسی',
                 color: Colors.white,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -193,7 +193,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -203,7 +203,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'ولی ما میخوایم که نحوه ایجاد کلاسمون رو شخصی سازی کنیم پس',
@@ -212,7 +212,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'میگیریم و براش شرط میذاریم __init__ مقدار ورودی رو از',
@@ -221,7 +221,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'که اگر مقدار ورودی بعد از مقداردهی، کوچکتر از ۱۸ بود',
@@ -230,7 +230,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'کلاسی ایجاد یا ساخته نشه',
@@ -239,7 +239,7 @@ class _FirstPostState extends State<FirstPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
@@ -252,7 +252,7 @@ class _FirstPostState extends State<FirstPost> {
               ),
             ),
           ),
-          const ShervinBdnDevDivider(),
+          const ShervinBdnDevHorizantalDivider(),
         ],
       ),
     );

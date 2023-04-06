@@ -15,11 +15,12 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        deviceWidth <= BdnConfig.websiteResponsivenessLimitForTablet
+        deviceWidth <= BdnConfig.websiteResponsivenessLimit
             ? const ShervinBdnDevMobileTabletView2()
             : ShervinBdnDevProjectBox(
-                width: 350.0,
-                height: 150.0,
+                width: BdnConfig.websiteProjectBoxWidth,
+                height: BdnConfig.websiteProjectBoxHeight,
+                text: 'یه پکیج پایتونی برای بدست آوردن اطلاعات سیستمی',
                 image: BdnUrls.pyScript,
                 ontap: () async {
                   await launchUrl(
@@ -29,8 +30,9 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
                 },
               ),
         ShervinBdnDevProjectBox(
-          width: 350.0,
-          height: 150.0,
+          width: BdnConfig.websiteProjectBoxWidth,
+          height: BdnConfig.websiteProjectBoxHeight,
+          text: 'Social Media یه اپلیکیشن برای پیدا کردن افراد تو',
           image: BdnUrls.finder,
           ontap: () async {
             await launchUrl(
@@ -39,8 +41,9 @@ class ShervinBdnDevDesktopProjectsView extends StatelessWidget {
           },
         ),
         ShervinBdnDevProjectBox(
-          width: 350.0,
-          height: 150.0,
+          width: BdnConfig.websiteProjectBoxWidth,
+          height: BdnConfig.websiteProjectBoxHeight,
+          text: 'نسخه کلون شده رابط کاربری اپلیکیشن واتس اپ',
           image: BdnUrls.whatsapp,
           ontap: () async {
             await launchUrl(

@@ -5,9 +5,9 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:image_downloader_web/image_downloader_web.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/fragments/widgets/boxes/shervinbdndev_certificatebox.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class CertificatesPage extends StatefulWidget {
   const CertificatesPage({super.key});
@@ -40,7 +40,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
-                  family: 'Vazirmatn',
+                  family: BdnConfig.websitePersianFontFamily,
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -49,7 +49,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
                     text: 'مدارک',
                     color: Colors.white,
                     size: 30.0,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                     weight: FontWeight.bold,
                   ),
                 ),
@@ -121,7 +121,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
                     BdnUrls.soloLearn);
               },
             ),
-            const ShervinBdnDevDivider(),
+            const ShervinBdnDevHorizantalDivider(),
           ],
         ),
       ),

@@ -3,9 +3,9 @@ import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:seo_renderer/renderers/image_renderer/image_renderer_vm.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class SecondPost extends StatefulWidget {
   const SecondPost({super.key});
@@ -38,14 +38,14 @@ class _SecondPostState extends State<SecondPost> {
                 text: '؟ ',
                 color: BdnColors.purple,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
               ShervinBdnDevSimpleText(
                 text: 'import',
                 color: BdnColors.purple,
                 size: 35.0,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -53,7 +53,7 @@ class _SecondPostState extends State<SecondPost> {
                 text: 'اصلا چرا',
                 color: Colors.white,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -66,7 +66,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'نیاز داریم که اونارو به اسکریپت اصلیمون معرفی کنیم',
@@ -75,7 +75,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: 'کنیم و ازشون استفاده کنیم import یا به اصطلاحی اونارو',
@@ -84,7 +84,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -94,7 +94,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           const SizedBox(height: 60.0),
           const Row(
@@ -105,7 +105,7 @@ class _SecondPostState extends State<SecondPost> {
                 text: 'import',
                 color: BdnColors.keywordColor,
                 size: 35.0,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
                 weight: FontWeight.bold,
               ),
               SizedBox(width: 8.0),
@@ -113,7 +113,7 @@ class _SecondPostState extends State<SecondPost> {
                 text: 'بررسی',
                 color: Colors.white,
                 size: 35.0,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
                 weight: FontWeight.bold,
               ),
             ],
@@ -126,7 +126,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -136,7 +136,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
@@ -159,7 +159,7 @@ class _SecondPostState extends State<SecondPost> {
                 color: BdnColors.methodColor,
                 size: 35.0,
                 weight: FontWeight.bold,
-                family: 'Rubik',
+                family: BdnConfig.websiteEnglishFontFamily,
               ),
               SizedBox(width: 8.0),
               ShervinBdnDevSimpleText(
@@ -167,7 +167,7 @@ class _SecondPostState extends State<SecondPost> {
                 color: Colors.white,
                 size: 35.0,
                 weight: FontWeight.bold,
-                family: 'Vazirmatn',
+                family: BdnConfig.websitePersianFontFamily,
               ),
             ],
           ),
@@ -179,7 +179,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -189,7 +189,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -199,7 +199,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -209,7 +209,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text:
@@ -219,7 +219,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           ShervinBdnDevSimpleText(
             text: ':) به همین راحتی',
@@ -228,7 +228,7 @@ class _SecondPostState extends State<SecondPost> {
                 ? 12.5
                 : 20.0,
             weight: FontWeight.normal,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
           ),
           SizedBox(
             width: deviceWidth <= BdnConfig.websiteResponsivenessLimit
@@ -241,7 +241,7 @@ class _SecondPostState extends State<SecondPost> {
               ),
             ),
           ),
-          const ShervinBdnDevDivider(),
+          const ShervinBdnDevHorizantalDivider(),
         ],
       ),
     );

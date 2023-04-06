@@ -4,10 +4,10 @@ import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:number_pagination/number_pagination.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 import 'package:shervinbdndev/fragments/projects/mobile/shervinbdndev_mobiletabview.dart';
 import 'package:shervinbdndev/fragments/projects/mobile/shervinbdndev_mobiletabview2.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 import 'package:shervinbdndev/fragments/projects/desktop/shervinbdndev_desktopprojectsview.dart';
 import 'package:shervinbdndev/fragments/projects/desktop/shervinbdndev_desktopprojectsview2.dart';
 
@@ -48,7 +48,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
                       text: 'من',
                       color: BdnColors.purple,
                       size: 30.0,
-                      family: 'Vazirmatn',
+                      family: BdnConfig.websitePersianFontFamily,
                       weight: FontWeight.bold,
                     ),
                     Padding(
@@ -57,7 +57,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
                         text: 'پروژه های',
                         color: Colors.white,
                         size: 30.0,
-                        family: 'Vazirmatn',
+                        family: BdnConfig.websitePersianFontFamily,
                         weight: FontWeight.bold,
                       ),
                     ),
@@ -102,7 +102,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
               ],
             ),
           ),
-          const ShervinBdnDevDivider(),
+          const ShervinBdnDevHorizantalDivider(),
         ],
       ),
     );

@@ -75,6 +75,15 @@ class ShervinBdnDevDesktopMenu extends StatelessWidget {
                   },
                 ),
                 ShervinBdnDevPageRouteWidget(
+                  text: 'حمایت',
+                  ontap: () {
+                    bdnRouter(
+                      context,
+                      '/donate',
+                    );
+                  },
+                ),
+                ShervinBdnDevPageRouteWidget(
                   text: 'مدارک',
                   ontap: () {
                     bdnRouter(

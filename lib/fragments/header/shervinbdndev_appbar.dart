@@ -16,6 +16,8 @@ class ShervinBdnDevAppbar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+
     return AppBar(
       leading: IconButton(
         icon: const Icon(

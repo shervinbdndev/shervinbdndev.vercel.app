@@ -35,7 +35,7 @@ class ShervinBdnDevHireMeButton extends StatelessWidget {
             text: text,
             color: Colors.white,
             size: 15.0,
-            family: 'Vazirmatn',
+            family: BdnConfig.websitePersianFontFamily,
             weight: FontWeight.normal,
           ),
         ),

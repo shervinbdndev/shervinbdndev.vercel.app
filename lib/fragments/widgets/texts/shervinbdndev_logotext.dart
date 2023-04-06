@@ -28,7 +28,7 @@ class ShervinBdnDevLogoText extends StatelessWidget {
                   BdnColors.blue,
                 ],
           textStyle: const TextStyle(
-            fontFamily: 'Rubik',
+            fontFamily: BdnConfig.websiteEnglishFontFamily,
             color: Colors.white,
             fontSize: 22.0,
             fontWeight: FontWeight.bold,

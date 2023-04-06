@@ -4,9 +4,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_devicon/flutter_devicon.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_progressbar.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class SkillsPage extends StatefulWidget {
   const SkillsPage({super.key});
@@ -39,7 +39,7 @@ class _SkillsPageState extends State<SkillsPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
-                  family: 'Vazirmatn',
+                  family: BdnConfig.websitePersianFontFamily,
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -48,7 +48,7 @@ class _SkillsPageState extends State<SkillsPage> {
                     text: 'مهارت های',
                     color: Colors.white,
                     size: 30.0,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                     weight: FontWeight.bold,
                   ),
                 ),
@@ -357,7 +357,7 @@ class _SkillsPageState extends State<SkillsPage> {
                             ),
                           ],
                         ),
-                  const ShervinBdnDevDivider(),
+                  const ShervinBdnDevHorizantalDivider(),
                 ],
               ),
             ),

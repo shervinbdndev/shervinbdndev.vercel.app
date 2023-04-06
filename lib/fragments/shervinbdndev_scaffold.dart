@@ -1,11 +1,11 @@
 import 'dart:math' as math;
-import 'package:wave/wave.dart';
-import 'package:wave/config.dart';
 import 'package:flutter/material.dart';
 import 'package:ripple_wave/ripple_wave.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
+import 'package:shervinbdndev/fragments/widgets/shervinbdndev_wave.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_appbar.dart';
+import 'package:shervinbdndev/fragments/footer/shervinbdndev_footer.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_drawer.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_particles.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_desktopmenu.dart';
@@ -102,55 +102,15 @@ class ShervinBdnDevScaffold extends StatelessWidget {
                 ),
                 Transform.rotate(
                   angle: math.pi,
-                  child: WaveWidget(
-                    config: CustomConfig(
-                      durations: <int>[
-                        4000,
-                        5000,
-                      ],
-                      heightPercentages: <double>[
-                        0.65,
-                        0.66,
-                      ],
-                      colors: <Color>[
-                        BdnColors.purple,
-                        BdnColors.secondaryPurple,
-                      ],
-                    ),
-                    size: const Size(
-                      double.infinity,
-                      50.0,
-                    ),
+                  child: const ShervinBdnDevWave(
+                    height: 50.0,
                   ),
                 ),
               ],
             ),
             importedWidgets,
-            const SizedBox(height: 30.0),
-            const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(
-                      Icons.copyright,
-                      size: 15.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(width: 5.0),
-                    ShervinBdnDevSimpleText(
-                      text: 'کپی رایت ۱۴۰۱',
-                      color: Colors.white,
-                      size: 15.0,
-                      family: 'Vazirmatn',
-                      weight: FontWeight.normal,
-                    ),
-                  ],
-                ),
-              ],
-            ),
+            const SizedBox(height: 60.0),
+            const ShervinBdnDevFooter(),
           ],
         ),
       ),

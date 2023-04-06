@@ -16,6 +16,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
           image: BdnUrls.portfolio,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'یه پورتفولیو ساده با فلاتر تحت وب',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/Portfolio'),
@@ -26,6 +27,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
           image: BdnUrls.resume,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'پروژه ارسال رزومه با جنگو',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/SendResume-Django'),
@@ -36,6 +38,7 @@ class ShervinBdnDevMobileTabletView2 extends StatelessWidget {
           image: BdnUrls.updator,
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'اسکریپت آپدیت کننده تمام پکیج های نصب شده پایتون',
           ontap: () async {
             await launchUrl(
               Uri.parse(

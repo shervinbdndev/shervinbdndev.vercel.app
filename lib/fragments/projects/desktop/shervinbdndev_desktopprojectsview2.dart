@@ -15,12 +15,13 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        deviceWidth <= BdnConfig.websiteResponsivenessLimitForTablet
+        deviceWidth <= BdnConfig.websiteResponsivenessLimit
             ? const ShervinBdnDevMobileTabletView2()
             : ShervinBdnDevProjectBox(
                 image: BdnUrls.portfolio,
-                width: 350.0,
-                height: 150.0,
+                width: BdnConfig.websiteProjectBoxWidth,
+                height: BdnConfig.websiteProjectBoxHeight,
+                text: 'یه پورتفولیو ساده با فلاتر تحت وب',
                 ontap: () async {
                   await launchUrl(
                     Uri.parse('https://github.com/shervinbdndev/Portfolio'),
@@ -29,8 +30,9 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
               ),
         ShervinBdnDevProjectBox(
           image: BdnUrls.resume,
-          width: 350.0,
-          height: 150.0,
+          width: BdnConfig.websiteProjectBoxWidth,
+          height: BdnConfig.websiteProjectBoxHeight,
+          text: 'پروژه ارسال رزومه با جنگو',
           ontap: () async {
             await launchUrl(
               Uri.parse('https://github.com/shervinbdndev/SendResume-Django'),
@@ -39,8 +41,9 @@ class ShervinBdnDevDesktopProjectsView2 extends StatelessWidget {
         ),
         ShervinBdnDevProjectBox(
           image: BdnUrls.updator,
-          width: 350.0,
-          height: 150.0,
+          width: BdnConfig.websiteProjectBoxWidth,
+          height: BdnConfig.websiteProjectBoxHeight,
+          text: 'اسکریپت آپدیت کننده تمام پکیج های نصب شده پایتون',
           ontap: () async {
             await launchUrl(
               Uri.parse(

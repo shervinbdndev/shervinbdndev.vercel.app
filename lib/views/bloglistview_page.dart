@@ -4,10 +4,10 @@ import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/router/router.dart';
 import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
-import 'package:shervinbdndev/fragments/widgets/shervinbdndev_divider.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_snackbar.dart';
 import 'package:shervinbdndev/fragments/widgets/boxes/shervinbnddev_blogbox.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
+import 'package:shervinbdndev/fragments/widgets/dividers/shervinbdndev_horizantaldivider.dart';
 
 class BlogListViewPage extends StatefulWidget {
   const BlogListViewPage({super.key});
@@ -40,7 +40,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                   text: 'من',
                   color: BdnColors.purple,
                   size: 30.0,
-                  family: 'Vazirmatn',
+                  family: BdnConfig.websitePersianFontFamily,
                   weight: FontWeight.bold,
                 ),
                 Padding(
@@ -49,7 +49,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                     text: 'مقالات',
                     color: Colors.white,
                     size: 30.0,
-                    family: 'Vazirmatn',
+                    family: BdnConfig.websitePersianFontFamily,
                     weight: FontWeight.bold,
                   ),
                 ),
@@ -142,7 +142,7 @@ class _BlogListViewPageState extends State<BlogListViewPage> {
                       ),
                     ],
                   ),
-            const ShervinBdnDevDivider(),
+            const ShervinBdnDevHorizantalDivider(),
           ],
         ),
       ),

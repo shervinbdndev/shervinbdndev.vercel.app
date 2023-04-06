@@ -7,6 +7,7 @@ import 'package:shervinbdndev/views/projects_page.dart';
 import 'package:shervinbdndev/views/snippets_page.dart';
 import 'package:shervinbdndev/views/schooling_page.dart';
 import 'package:seo_renderer/helpers/renderer_state.dart';
+import 'package:shervinbdndev/views/buymeacoffe_page.dart';
 import 'package:shervinbdndev/views/posts/first_post.dart';
 import 'package:shervinbdndev/views/posts/second_post.dart';
 import 'package:shervinbdndev/views/certificates_page.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
         '/snippets/how-to-get-public-ip-using-python': (context) =>
             const FirstSnippet(),
         '/schooling': (context) => const SchoolingPage(),
+        '/donate': (context) => const BuyMeACoffeePage(),
         '/certificates': (context) => const CertificatesPage(),
       },
       debugShowCheckedModeBanner: !true,

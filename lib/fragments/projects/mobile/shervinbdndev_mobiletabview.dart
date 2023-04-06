@@ -15,6 +15,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'یه پکیج پایتونی برای بدست آوردن اطلاعات سیستمی',
           image: BdnUrls.pyScript,
           ontap: () async {
             await launchUrl(
@@ -25,6 +26,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'Social Media یه اپلیکیشن برای پیدا کردن افراد تو',
           image: BdnUrls.finder,
           ontap: () async {
             await launchUrl(
@@ -35,6 +37,7 @@ class ShervinBdnDevMobileTabletView extends StatelessWidget {
         ShervinBdnDevProjectBox(
           width: BdnConfig.websiteProjectBoxWidth,
           height: BdnConfig.websiteProjectBoxHeight,
+          text: 'نسخه کلون شده رابط کاربری اپلیکیشن واتس اپ',
           image: BdnUrls.whatsapp,
           ontap: () async {
             await launchUrl(

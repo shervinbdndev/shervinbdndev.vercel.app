@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shervinbdndev/components/component.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
 
 class ShervinBdnDevListTile extends StatelessWidget {
@@ -19,11 +20,12 @@ class ShervinBdnDevListTile extends StatelessWidget {
         color: Colors.white,
         size: 30.0,
       ),
+      mouseCursor: SystemMouseCursors.click,
       title: ShervinBdnDevSimpleText(
         text: text,
         color: Colors.white,
         size: 20.0,
-        family: 'Vazirmatn',
+        family: BdnConfig.websitePersianFontFamily,
         weight: FontWeight.bold,
       ),
     );
