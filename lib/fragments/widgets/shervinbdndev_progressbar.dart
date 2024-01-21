@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:flutter_rounded_progress_bar/rounded_progress_bar_style.dart';
 import 'package:flutter_rounded_progress_bar/flutter_rounded_progress_bar.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';

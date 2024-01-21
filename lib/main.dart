@@ -14,6 +14,7 @@ import 'package:shervinbdndev/views/certificates_page.dart';
 import 'package:shervinbdndev/views/bloglistview_page.dart';
 import 'package:seo_renderer/helpers/robot_detector_vm.dart';
 import 'package:shervinbdndev/views/snippets/first_snippet.dart';
+import 'package:shervinbdndev/views/tutorial_page.dart';
 
 void main() {
   if (kIsWeb) {
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/blog': (context) => const BlogListViewPage(),
         '/blog/constructors-in-python': (context) => const FirstPost(),
         '/blog/imports-in-python': (context) => const SecondPost(),
+        '/tutorials':(context) => const TutorialPage(),
         '/projects': (context) => const ProjectsPage(),
         '/skills': (context) => const SkillsPage(),
         '/snippets': (context) => const SnippetsPage(),

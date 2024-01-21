@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:shervinbdndev/fragments/widgets/boxes/shervinbdndev_projectbox.dart';
 
 class ShervinBdnDevMobileTabletView2 extends StatelessWidget {

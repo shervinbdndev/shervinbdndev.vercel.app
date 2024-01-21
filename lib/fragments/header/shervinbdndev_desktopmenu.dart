@@ -48,6 +48,15 @@ class ShervinBdnDevDesktopMenu extends StatelessWidget {
                   },
                 ),
                 ShervinBdnDevPageRouteWidget(
+                  text: 'آموزش ها',
+                  ontap: () {
+                    bdnRouter(
+                      context,
+                      '/tutorials',
+                    );
+                  },
+                ),
+                ShervinBdnDevPageRouteWidget(
                   text: 'قطعه کد',
                   ontap: () {
                     bdnRouter(

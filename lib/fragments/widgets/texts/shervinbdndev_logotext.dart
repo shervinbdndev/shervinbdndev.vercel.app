@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class ShervinBdnDevLogoText extends StatelessWidget {

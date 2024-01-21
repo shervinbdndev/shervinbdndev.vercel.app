@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
+import 'package:dev_icons/dev_icons.dart';
 import 'package:flutter_devicon/flutter_devicon.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_progressbar.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
@@ -66,15 +67,15 @@ class _SkillsPageState extends State<SkillsPage> {
                           children: <Widget>[
                             ShervinBdnDevProgressBar(
                               icon: FlutterDEVICON.python_plain,
-                              percent: 90,
-                              text: '90%',
+                              percent: 95,
+                              text: '95%',
                               techText: 'Python',
                             ),
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
                               icon: FlutterDEVICON.django_plain,
-                              percent: 65,
-                              text: '65%',
+                              percent: 80,
+                              text: '80%',
                               techText: 'Django',
                             ),
                             SizedBox(height: 20.0),
@@ -87,8 +88,8 @@ class _SkillsPageState extends State<SkillsPage> {
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
                               icon: FlutterDEVICON.javascript_plain,
-                              percent: 40,
-                              text: '40%',
+                              percent: 50,
+                              text: '50%',
                               techText: 'JavaScript',
                             ),
                             SizedBox(height: 20.0),
@@ -114,9 +115,16 @@ class _SkillsPageState extends State<SkillsPage> {
                             ),
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
-                              icon: FlutterDEVICON.bootstrap_plain,
+                              icon: DevIcons.tailwindcssPlain,
                               percent: 70,
                               text: '70%',
+                              techText: 'Tailwind',
+                            ),
+                            SizedBox(height: 20.0),
+                            ShervinBdnDevProgressBar(
+                              icon: FlutterDEVICON.bootstrap_plain,
+                              percent: 75,
+                              text: '75%',
                               techText: 'Bootstrap',
                             ),
                             SizedBox(height: 20.0),
@@ -157,16 +165,9 @@ class _SkillsPageState extends State<SkillsPage> {
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
                               icon: FlutterDEVICON.android_plain,
-                              percent: 70,
-                              text: '70%',
+                              percent: 75,
+                              text: '75%',
                               techText: 'Android',
-                            ),
-                            SizedBox(height: 20.0),
-                            ShervinBdnDevProgressBar(
-                              icon: FlutterDEVICON.linux_plain,
-                              percent: 80,
-                              text: '80%',
-                              techText: 'Linux',
                             ),
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
@@ -177,10 +178,17 @@ class _SkillsPageState extends State<SkillsPage> {
                             ),
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
-                              icon: FlutterDEVICON.visualstudio_plain,
+                              icon: DevIcons.vscodePlain,
                               percent: 95,
                               text: '95%',
                               techText: 'VsCode',
+                            ),
+                            SizedBox(height: 20.0),
+                            ShervinBdnDevProgressBar(
+                              icon: DevIcons.visualstudioPlain,
+                              percent: 45,
+                              text: '45%',
+                              techText: 'Visual Studio',
                             ),
                             SizedBox(height: 20.0),
                             ShervinBdnDevProgressBar(
@@ -199,15 +207,15 @@ class _SkillsPageState extends State<SkillsPage> {
                               children: <Widget>[
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.python_plain,
-                                  percent: 90,
-                                  text: '90%',
+                                  percent: 95,
+                                  text: '95%',
                                   techText: 'Python',
                                 ),
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.django_plain,
-                                  percent: 65,
-                                  text: '65%',
+                                  percent: 80,
+                                  text: '80%',
                                   techText: 'Django',
                                 ),
                                 SizedBox(width: 20.0),
@@ -217,6 +225,13 @@ class _SkillsPageState extends State<SkillsPage> {
                                   text: '75%',
                                   techText: 'Flutter',
                                 ),
+                                SizedBox(width: 20.0),
+                                ShervinBdnDevProgressBar(
+                                  icon: FlutterDEVICON.javascript_plain,
+                                  percent: 50,
+                                  text: '50%',
+                                  techText: 'JavaScript',
+                                ),
                               ],
                             ),
                             SizedBox(height: 20.0),
@@ -224,13 +239,6 @@ class _SkillsPageState extends State<SkillsPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
-                                ShervinBdnDevProgressBar(
-                                  icon: FlutterDEVICON.javascript_plain,
-                                  percent: 40,
-                                  text: '40%',
-                                  techText: 'JavaScript',
-                                ),
-                                SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.github_original,
                                   percent: 85,
@@ -244,13 +252,7 @@ class _SkillsPageState extends State<SkillsPage> {
                                   text: '70%',
                                   techText: 'HTML',
                                 ),
-                              ],
-                            ),
-                            SizedBox(height: 20.0),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
+                                SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.css3_plain,
                                   percent: 60,
@@ -259,9 +261,22 @@ class _SkillsPageState extends State<SkillsPage> {
                                 ),
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
-                                  icon: FlutterDEVICON.bootstrap_plain,
+                                  icon: DevIcons.tailwindcssPlain,
                                   percent: 70,
                                   text: '70%',
+                                  techText: 'Tailwind',
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 20.0),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                ShervinBdnDevProgressBar(
+                                  icon: FlutterDEVICON.bootstrap_plain,
+                                  percent: 75,
+                                  text: '75%',
                                   techText: 'Bootstrap',
                                 ),
                                 SizedBox(width: 20.0),
@@ -271,13 +286,7 @@ class _SkillsPageState extends State<SkillsPage> {
                                   text: '55%',
                                   techText: 'SASS',
                                 ),
-                              ],
-                            ),
-                            SizedBox(height: 20.0),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
+                                SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon:
                                       FlutterDEVICON.postgresql_plain_wordmark,
@@ -292,13 +301,6 @@ class _SkillsPageState extends State<SkillsPage> {
                                   text: '70%',
                                   techText: 'MYSQL',
                                 ),
-                                SizedBox(width: 20.0),
-                                ShervinBdnDevProgressBar(
-                                  icon: FlutterDEVICON.mongodb_plain,
-                                  percent: 30,
-                                  text: '30%',
-                                  techText: 'Mongo DB',
-                                ),
                               ],
                             ),
                             SizedBox(height: 20.0),
@@ -306,6 +308,14 @@ class _SkillsPageState extends State<SkillsPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
+                                SizedBox(width: 20.0),
+                                ShervinBdnDevProgressBar(
+                                  icon: FlutterDEVICON.mongodb_plain,
+                                  percent: 30,
+                                  text: '30%',
+                                  techText: 'Mongo DB',
+                                ),
+                                SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.ubuntu_plain,
                                   percent: 80,
@@ -315,8 +325,8 @@ class _SkillsPageState extends State<SkillsPage> {
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
                                   icon: FlutterDEVICON.android_plain,
-                                  percent: 70,
-                                  text: '70%',
+                                  percent: 75,
+                                  text: '75%',
                                   techText: 'Android',
                                 ),
                                 SizedBox(width: 20.0),
@@ -326,6 +336,7 @@ class _SkillsPageState extends State<SkillsPage> {
                                   text: '80%',
                                   techText: 'Linux',
                                 ),
+                                SizedBox(width: 20.0),
                               ],
                             ),
                             SizedBox(height: 20.0),
@@ -341,10 +352,17 @@ class _SkillsPageState extends State<SkillsPage> {
                                 ),
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
-                                  icon: FlutterDEVICON.visualstudio_plain,
+                                  icon: DevIcons.vscodePlain,
                                   percent: 95,
                                   text: '95%',
                                   techText: 'VsCode',
+                                ),
+                                SizedBox(width: 20.0),
+                                ShervinBdnDevProgressBar(
+                                  icon: DevIcons.visualstudioPlain,
+                                  percent: 45,
+                                  text: '45%',
+                                  techText: 'Visual Studio',
                                 ),
                                 SizedBox(width: 20.0),
                                 ShervinBdnDevProgressBar(
@@ -355,6 +373,7 @@ class _SkillsPageState extends State<SkillsPage> {
                                 ),
                               ],
                             ),
+                            SizedBox(height: 20.0),
                           ],
                         ),
                   const ShervinBdnDevHorizantalDivider(),

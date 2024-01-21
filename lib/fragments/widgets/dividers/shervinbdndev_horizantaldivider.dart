@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 
 class ShervinBdnDevHorizantalDivider extends StatelessWidget {
   const ShervinBdnDevHorizantalDivider({super.key});

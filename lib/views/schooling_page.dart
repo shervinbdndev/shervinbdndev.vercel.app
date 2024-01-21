@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:lecle_bubble_timeline/models/timeline_item.dart';
 import 'package:lecle_bubble_timeline/lecle_bubble_timeline.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
@@ -64,7 +64,7 @@ class _SchoolingPageState extends State<SchoolingPage> {
                   icon: Icon(
                     Icons.school_rounded,
                     color: BdnColors.blue,
-                    size: 25.0,
+                    size: 30.0,
                   ),
                   bubbleColor: BdnColors.purple,
                   description: 'هنرستان فنی و حرفه ای علم و صنعت نوین رشت',
@@ -89,11 +89,41 @@ class _SchoolingPageState extends State<SchoolingPage> {
                 ),
                 TimelineItem(
                   title: '۱۴۰۲-۱۴۰۰',
-                  subtitle: 'فوق دیپلم - در حال تحصیل',
+                  subtitle: 'فوق دیپلم رشته کامپیوتر - نرم افزار',
                   icon: Icon(
                     Icons.school_rounded,
                     color: BdnColors.blue,
-                    size: 25.0,
+                    size: 30.0,
+                  ),
+                  bubbleColor: BdnColors.purple,
+                  description:
+                      'دانشکده فنی و حرفه ای شهید چمران رشت',
+                  titleStyle: TextStyle(
+                    fontSize: 25.0,
+                    fontFamily: BdnConfig.websitePersianFontFamily,
+                    color: BdnColors.purple,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  subtitleStyle: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: BdnConfig.websitePersianFontFamily,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  descriptionStyle: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: BdnConfig.websitePersianFontFamily,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                TimelineItem(
+                  title: '۱۴۰۴-۱۴۰۲',
+                  subtitle: 'کارشناسی - در حال تحصیل',
+                  icon: Icon(
+                    Icons.school_rounded,
+                    color: BdnColors.blue,
+                    size: 30.0,
                   ),
                   bubbleColor: BdnColors.purple,
                   description:

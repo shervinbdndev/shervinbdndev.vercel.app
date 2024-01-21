@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clipboard/clipboard.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_snackbar.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';

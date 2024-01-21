@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:shervinbdndev/router/router.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_listtile.dart';
@@ -58,6 +59,16 @@ class ShervinBdnDevDrawer extends StatelessWidget {
                   widget: const ShervinBdnDevListTile(
                     icon: Icons.menu_book_rounded,
                     text: 'بلاگ',
+                  ),
+                ),
+                ShervinBdnDevRipple(
+                  bd: 0,
+                  ontap: () {
+                    bdnRouter(context, '/tutorials');
+                  },
+                  widget: const ShervinBdnDevListTile(
+                    icon: Iconsax.video_octagon,
+                    text: 'آموزش ها',
                   ),
                 ),
                 ShervinBdnDevRipple(

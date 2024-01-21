@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tilt/flutter_tilt.dart';
 import 'package:hovering/hovering.dart';
 import 'package:like_button/like_button.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_ripple.dart';
 
@@ -25,8 +26,13 @@ class ShervinBdnDevBlogBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10.0),
+    return Tilt(
+      lightConfig: const LightConfig(
+        color: BdnColors.blue,
+      ),
+      shadowConfig: const ShadowConfig(
+        color: Colors.transparent,
+      ),
       child: Column(
         children: <Widget>[
           ShervinBdnDevRipple(

@@ -1,7 +1,7 @@
 import 'package:wave/wave.dart';
 import 'package:wave/config.dart';
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 
 class ShervinBdnDevWave extends StatelessWidget {
   final double height;

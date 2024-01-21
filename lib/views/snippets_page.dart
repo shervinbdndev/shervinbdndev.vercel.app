@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shervinbdndev/router/router.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_snackbar.dart';
 import 'package:shervinbdndev/fragments/widgets/boxes/shervinbnddev_blogbox.dart';

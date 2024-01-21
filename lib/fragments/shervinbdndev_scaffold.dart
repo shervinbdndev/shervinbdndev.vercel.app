@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:ripple_wave/ripple_wave.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:shervinbdndev/fragments/widgets/shervinbdndev_wave.dart';
 import 'package:shervinbdndev/fragments/header/shervinbdndev_appbar.dart';

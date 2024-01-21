@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_style.dart';

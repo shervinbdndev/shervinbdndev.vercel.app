@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meta_seo/meta_seo.dart';
 import 'package:flutter/foundation.dart';
-import 'package:shervinbdndev/components/component.dart';
+import 'package:shervinbdndev/constants/constants.dart';
 import 'package:number_pagination/number_pagination.dart';
 import 'package:shervinbdndev/fragments/shervinbdndev_scaffold.dart';
 import 'package:shervinbdndev/fragments/widgets/texts/shervinbdndev_simpletext.dart';
@@ -54,7 +54,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
                     Padding(
                       padding: EdgeInsets.only(left: 10.0),
                       child: ShervinBdnDevSimpleText(
-                        text: 'پروژه های',
+                        text: 'نمونه پروژه های',
                         color: Colors.white,
                         size: 30.0,
                         family: BdnConfig.websitePersianFontFamily,
